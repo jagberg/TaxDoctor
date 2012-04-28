@@ -88,15 +88,17 @@
 <body>
     <div id="header">
         <h1>
-            <img alt="Google" src="//www.google.com/apps/images/core/apps.png">
+            <!--img alt="Google" src="//www.google.com/apps/images/core/apps.png"-->
             Tax Doctor
         </h1>
         <div>
             <li>Contact: 011 787-7279</li>
-            <li>Mobile</li>
+            <li>Mobile: 082 852-7098</li>
         </div>
     </div>
     <ul id="nav">
+        <li>@Html.ActionLink("Home", "Home", "Home")
+        </li>
         <li><strong>Our Services</strong>
             <ul>
                 <li><a href="/accounting/index.html">Accounting&nbsp;</a></li>
@@ -105,111 +107,32 @@
                 <li><a href="/cash flow/index.html">Cash Flow&nbsp;</a></li>
                 <li><a href="/business plans/index.html">Business Plans&nbsp;</a></li>
                 <li><a href="/payroll paye/index.html">Payroll PAYE&nbsp;</a></li>
-                <li><a href="/financial statements/index.html">Financial Statements&nbsp;</a></li>
-                <li><a href="/training/index.html">Training&nbsp;</a></li>
                 <li><a href="/tax services/index.html">Tax Services&nbsp;</a></li>
-                <li><a href="/refactoring/index.html">Refactoring&nbsp;</a></li>
                 <li><a href="/bank loan applications/index.html">Bank Loan Applications&nbsp;</a></li>
-                <li><a href="/creditors reconciliations/index.html">Creditors reconciliations&nbsp;</a></li>
+                <li><a href="/creditors reconciliations/index.html">Creditors Reconciliations&nbsp;</a></li>
             </ul>
         </li>
         <li><strong>Training</strong>
             <ul>
-                <li><a href="/accountanttraining/index.html">Accountants&nbsp;</a> </li>
-                <li><a href="/softwarepackages/index.html">Software Packages&nbsp;</a> </li>
+                <li>@Html.ActionLink("Accounting", "Accounting", "Training")</li>
+                <li>@Html.ActionLink("QuickBooks", "Packages", "Training")</li>
+                <li>@Html.ActionLink("Pastel Payroll", "Packages", "Training")</li>
+                <li>@Html.ActionLink("Excel", "Packages", "Training")</li>
             </ul>
         </li>
-        <li><strong>About Us</strong>
-            <ul>
-                <li><a href="/apps/intl/en-GB/business/details.html">Benefits&nbsp;</a> </li>
-                <li><a href="/apps/intl/en-GB/business/features.html">Features &amp; pricing&nbsp;</a>
-                </li>
-                <li><a href="/apps/intl/en-GB/business/mobile.html">Mobile&nbsp;</a> </li>
-                <li><a href="/apps/intl/en-GB/business/infrastructure_security.html">Security&nbsp;</a>
-                </li>
-                <li><a href="/apps/intl/en-GB/privacy/">Privacy&nbsp;</a> </li>
-                <li><a href="//www.youtube.com/user/GoogleApps">Product videos&nbsp;</a> </li>
-                <li><a href="/apps/intl/en-GB/business/chromenotebooks.html">Chromebooks&nbsp;</a>
-                </li>
-            </ul>
-        </li>
-        <li><strong>Contact Us</strong>
-            <ul>
-                <li><a href="/a/cpanel/premier/new">30-day free trial&nbsp;</a> </li>
-                <li><a href="/apps/intl/en-GB/business/contact_sales.html">Contact sales&nbsp;</a>
-                </li>
-                <li><a href="http://deployment.googleapps.com">Deployment resources&nbsp;</a> </li>
-                <li><a href="//www.google.com/support/a/bin/answer.py?hl=en-GB&amp;answer=1186224&amp;rd=1#?utm_source=a_nav&amp;utm_medium=web&amp;utm_campaign=smbwizard">
-                    Deployment wizard help&nbsp;</a> </li>
-                <li><a href="/apps/intl/en-GB/business/faq.html">FAQ&nbsp;</a> </li>
-            </ul>
-        </li>
-        <li><strong>Customers</strong>
-            <ul>
-                <li><a href="/apps/intl/en-GB/customers/index.html">Success stories &nbsp;</a> </li>
-            </ul>
-        </li>
-        <li><strong>Support</strong>
-            <ul>
-                <li><a href="//www.google.com/support/a/bin/static.py?hl=en-GB&amp;page=contacting_support.html">
-                    Support home&nbsp;</a> </li>
-                <li><a href="//sites.google.com/a/googleapps.com/google-apps-learning-center/home?utm_source=a_nav&amp;utm_medium=web&amp;utm_campaign=appslearning">
-                    Google Apps learning centre&nbsp;</a> </li>
-            </ul>
+        <li>@Html.ActionLink("About Us", "About", "Home")
         </li>
     </ul>
-    <div id="stage">
+    <div id="stage">@*
         <h2>
-            Web applic
-        </h2>
-        <div>
-            Contact sales
-        </div>
+            Tax Doc
+        </h2>*@
     </div>
     <div id="article">
-        <div class="section">
-            <div id="main">
-                @RenderBody()
-            </div>
-        </div>
-        <div class="section">        
-            <h2>
-                Tax Doctor news
-            </h2>
-        </div>
-        <div class="sections type-4">
-            <div class="section pos-1">
-                <h2>
-                    Personal Income Tax
-                </h2>
-            </div>
-            <div class="section pos-2">
-                <h2>
-                    Small Business Services1
-                </h2>
-            </div>
-        </div>
+        @RenderBody()
     </div>
     <div id="footer">
         <div>
-            <dl>
-                <dt>Solutions </dt>
-                <dd>
-                    <a href="/apps/intl/en-GB/group/index.html">Google Apps (Free)&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/index.html">Google Apps for Business&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/a/help/intl/en-GB/edu/index.html">Google Apps for Education&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/index.html">Compare editions&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/resellers/index.html">Become a reseller&nbsp;</a>
-                </dd>
-            </dl>
             <dl>
                 <dt>Our Services </dt>
                 <dd>
@@ -225,101 +148,34 @@
                 <dd>
                     <a href="/payroll paye/index.html">Payroll PAYE&nbsp;</a></dd>
                 <dd>
-                    <a href="/financial statements/index.html">Financial Statements&nbsp;</a></dd>
-                <dd>
-                    <a href="/training/index.html">Training&nbsp;</a></dd>
-                <dd>
                     <a href="/tax services/index.html">Tax Services&nbsp;</a></dd>
-                <dd>
-                    <a href="/refactoring/index.html">Refactoring&nbsp;</a></dd>
                 <dd>
                     <a href="/bank loan applications/index.html">Bank Loan Applications&nbsp;</a></dd>
                 <dd>
-                    <a href="/creditors reconciliations/index.html">Creditors reconciliations&nbsp;</a></dd>
+                    <a href="/creditors reconciliations/index.html">Creditors Reconciliations&nbsp;</a></dd>
             </dl>
             <dl>
                 <dt>Training</dt>
                 <dd>
-                    <a href="/training/index.html">Accountants&nbsp;</a>
+                    @Html.ActionLink("Accounting", "Accounting", "Training")
+                </dd>
+                <br />                
+                <dt>Package Training</dt>
+                <dd>
+                    @Html.ActionLink("QuickBooks", "Packages", "Training")
                 </dd>
                 <dd>
-                    <a href="/tax services/index.html">Software Packages&nbsp;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>How it works </dt>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/details.html">Benefits&nbsp;</a>
+                    @Html.ActionLink("Pastel Payroll", "Packages", "Training")
                 </dd>
                 <dd>
-                    <a href="/apps/intl/en-GB/business/features.html">Features &amp; pricing&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/mobile.html">Mobile&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/infrastructure_security.html">Security&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/privacy/">Privacy&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="//www.youtube.com/user/GoogleApps">Product videos&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/chromenotebooks.html">Chromebooks&nbsp;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Get started </dt>
-                <dd>
-                    <a href="/a/cpanel/premier/new">30-day free trial&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/contact_sales.html">Contact sales&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="http://deployment.googleapps.com">Deployment resources&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="//www.google.com/support/a/bin/answer.py?hl=en-GB&amp;answer=1186224&amp;rd=1#?utm_source=a_nav&amp;utm_medium=web&amp;utm_campaign=smbwizard">
-                        Deployment wizard help&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="/apps/intl/en-GB/business/faq.html">FAQ&nbsp;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Customers </dt>
-                <dd>
-                    <a href="/apps/intl/en-GB/customers/index.html">Success stories &nbsp;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Support </dt>
-                <dd>
-                    <a href="//www.google.com/support/a/bin/static.py?hl=en-GB&amp;page=contacting_support.html">
-                        Support home&nbsp;</a>
-                </dd>
-                <dd>
-                    <a href="//sites.google.com/a/googleapps.com/google-apps-learning-center/home?utm_source=a_nav&amp;utm_medium=web&amp;utm_campaign=appslearning">
-                        Google Apps learning centre&nbsp;</a>
+                    @Html.ActionLink("Excel", "Packages", "Training")
                 </dd>
             </dl>
         </div>
         <div id="meta">
-            © 2011 Tax Doctor
+            © 2012 Tax Doctor
             <ul>
-                <li><a href="/apps/intl/en-GB/terms/standard_terms.html">Terms of Service</a> </li>
-                <li><a href="/apps/intl/en-GB/terms/use_policy.html">Programme Policies</a> </li>
-                <li><a href="/support/a/?hl=en-GB">Help Centre</a> </li>
-                <li><a href="http://fusion.google.com/add?source=atgs&amp;amp;feedurl=http%3A//feeds.feedburner.com/GoogleAppsUpdates">
-                    <img alt="Feed" src="//www.google.com/images/icons/feature/rss-o16.png"></a>
-                </li>
-                <li><a href="http://www.youtube.com/user/GoogleApps">
-                    <img alt="YouTube" src="//www.google.com/images/icons/product/youtube-16.png"></a>
-                </li>
-                <li><a href="http://twitter.com/GoogleAtWork">
+                <li><a href="http://twitter.com/taxdoctorsa">
                     <img alt="Twitter" src="//www.google.com/apps/images/core/icons/twitter.png"></a>
                 </li>
             </ul>

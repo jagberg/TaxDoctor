@@ -560,7 +560,7 @@
     #stage
     {
         max-width: 684px;
-        min-height: 65px;
+        min-height: 10px;
         padding: 30px 244px 10px 20px;
         position: relative;
     }

@@ -6,17 +6,22 @@ using System.Web.Mvc;
 
 namespace TaxDoctor.Web.Controllers
 {
-    public class HomeController : Controller
+    public class TrainingController : Controller
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to Tax Doctor";
-
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Accounting()
         {
+            return View();
+        }
+
+        public ActionResult Packages(string message)
+        {
+            ViewBag.Message = message;
+
             return View();
         }
     }
