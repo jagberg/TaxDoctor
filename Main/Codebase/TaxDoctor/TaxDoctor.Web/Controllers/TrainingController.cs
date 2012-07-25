@@ -18,6 +18,21 @@ namespace TaxDoctor.Web.Controllers
             return View();
         }
 
+        public ActionResult Excel()
+        {
+            return View();
+        }
+
+        public ActionResult Pastel()
+        {
+            return View();
+        }
+
+        public ActionResult QuickBooks()
+        {
+            return View();
+        }
+
         public ActionResult Packages(string message)
         {
             ViewBag.Message = message;
