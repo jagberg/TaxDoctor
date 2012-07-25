@@ -97,27 +97,27 @@
         </div>
     </div>
     <ul id="nav">
-        <li>@Html.ActionLink("Home", "Home", "Home")
+        <li>@Html.ActionLink("Home", "Index", "Home")
         </li>
         <li><strong>Our Services</strong>
             <ul>
-                <li><a href="/accounting/index.html">Accounting&nbsp;</a></li>
-                <li><a href="/bookkeeping/index.html">Bookkeeping&nbsp;</a></li>
-                <li><a href="/financial statements/index.html">Financial Statements&nbsp;</a></li>
-                <li><a href="/cash flow/index.html">Cash Flow&nbsp;</a></li>
-                <li><a href="/business plans/index.html">Business Plans&nbsp;</a></li>
-                <li><a href="/payroll paye/index.html">Payroll PAYE&nbsp;</a></li>
-                <li><a href="/tax services/index.html">Tax Services&nbsp;</a></li>
-                <li><a href="/bank loan applications/index.html">Bank Loan Applications&nbsp;</a></li>
-                <li><a href="/creditors reconciliations/index.html">Creditors Reconciliations&nbsp;</a></li>
+                <li>@Html.ActionLink("Accounting", "Accounting", "Services")</li>
+                <li>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services")</li>
+                <li>@Html.ActionLink("Financial Statements", "FinancialStatements", "Services")</li>
+                <li>@Html.ActionLink("Cash Flow", "CashFlow", "Services")</li>
+                <li>@Html.ActionLink("Business Plans", "BusinessPlans", "Services")</li>
+                <li>@Html.ActionLink("Payroll PAYE", "PayrollPAYE", "Services")</li>
+                <li>@Html.ActionLink("Tax Services", "TaxServices", "Services")</li>
+                <li>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services")</li>
+                <li>@Html.ActionLink("Creditors Reconciliations", "CreditorsReconciliations", "Services")</li>
             </ul>
         </li>
         <li><strong>Training</strong>
             <ul>
                 <li>@Html.ActionLink("Accounting", "Accounting", "Training")</li>
-                <li>@Html.ActionLink("QuickBooks", "Packages", "Training")</li>
-                <li>@Html.ActionLink("Pastel Payroll", "Packages", "Training")</li>
-                <li>@Html.ActionLink("Excel", "Packages", "Training")</li>
+                <li>@Html.ActionLink("QuickBooks", "QuickBooks", "Training")</li>
+                <li>@Html.ActionLink("Pastel Payroll", "Pastel", "Training")</li>
+                <li>@Html.ActionLink("Excel", "Excel", "Training")</li>
             </ul>
         </li>
         <li>@Html.ActionLink("About Us", "About", "Home")
@@ -162,13 +162,13 @@
                 <br />                
                 <dt>Package Training</dt>
                 <dd>
-                    @Html.ActionLink("QuickBooks", "Packages", "Training")
+                    @Html.ActionLink("QuickBooks", "QuickBooks", "Training")
                 </dd>
                 <dd>
-                    @Html.ActionLink("Pastel Payroll", "Packages", "Training")
+                    @Html.ActionLink("Pastel Payroll", "Pastel", "Training")
                 </dd>
                 <dd>
-                    @Html.ActionLink("Excel", "Packages", "Training")
+                    @Html.ActionLink("Excel", "Excel", "Training")
                 </dd>
             </dl>
         </div>
