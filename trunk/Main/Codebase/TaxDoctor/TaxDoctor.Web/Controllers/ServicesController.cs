@@ -13,6 +13,17 @@ namespace TaxDoctor.Web.Controllers
             return View();
         }
 
+        //public ActionResult OurServices()
+        //{
+        //    return View();
+        //}
+
+        public ActionResult OurServices(string message)
+        {
+            ViewBag.Message = message;
+
+            return View();
+        }
 
         public ActionResult Bookkeeping() { return View(); }
         public ActionResult FinancialStatements() { return View(); }
