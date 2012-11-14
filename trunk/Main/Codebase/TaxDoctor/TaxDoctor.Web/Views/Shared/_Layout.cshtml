@@ -44,43 +44,41 @@
     <meta content="google apps, hosted, online, cloud, applications, email, gmail, calendar, intranet, website spam, security, cloud computing, saas, software as a service, hosted email, business email, enterprise email, webmail"
         name="keywords">
     <style>
-        .type-3 .g-button-basic
-        {
+        .type-3 .g-button-basic {
             float: right;
             margin: 0 0 0 20px;
         }
-        iframe
-        {
+
+        iframe {
             width: 723px;
             height: 330px;
         }
-        .media
-        {
+
+        .media {
             float: none;
             margin: 0px;
             width: auto;
         }
-        .media div
-        {
-            margin: 0 0 5px;
-        }
-        .media div p
-        {
-            font-size: 12px;
-            line-height: 20px;
-        }
-        .media a.more
-        {
-            font-weight: bold;
-        }
-        #webinars a
-        {
+
+            .media div {
+                margin: 0 0 5px;
+            }
+
+                .media div p {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+            .media a.more {
+                font-weight: bold;
+            }
+
+        #webinars a {
             font-weight: normal;
         }
     </style>
     <style>
-        a.c1
-        {
+        a.c1 {
             font-weight: bold;
         }
     </style>
@@ -130,6 +128,10 @@
         </h2>*@
     </div>
     <div id="article">
+        <div class="contactus">
+            <h2>Contact Us</h2>
+            @{ Html.RenderAction("ContactUs", "Contact"); }
+        </div>
         @RenderBody()
     </div>
     <div id="footer">
@@ -160,7 +162,7 @@
                 <dd>
                     @Html.ActionLink("Accounting", "Accounting", "Training")
                 </dd>
-                <br />                
+                <br />
                 <dt>Package Training</dt>
                 <dd>
                     @Html.ActionLink("QuickBooks", "QuickBooks", "Training")
