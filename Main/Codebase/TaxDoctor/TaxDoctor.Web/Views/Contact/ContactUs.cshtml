@@ -1,0 +1,19 @@
+﻿@model TaxDoctor.Web.ContactModel
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm())
+{
+    <div>Name: @Html.ValidationMessageFor(x=>x.Name) @Html.EditorFor(x => x.Name)</div>
+
+    <div>Phone Number: @Html.ValidationMessageFor(x => x.PhoneNumber) @Html.EditorFor(x => x.PhoneNumber)</div>
+
+    <div>Email Address: @Html.ValidationMessageFor(x => x.EmailAddress) @Html.EditorFor(x => x.EmailAddress, new { type = "email" })</div>
+    
+    <div>Comments: @Html.ValidationMessageFor(x => x.Comment) @Html.EditorFor(x => x.Comment)</div>
+
+    <p align="right">
+        <input class="actionButtons" type="submit" value="Send" />
+    </p>
+}

@@ -167,9 +167,9 @@
         width: auto;
     }
 
-    form input, form textarea {
+    /*form input, form textarea {
         width: 300px;
-    }
+    }*/
 
     form strong, label, form .f-c1 li, form .f-c2 li, form .f-c3 li, form .f-c4 li {
         display: block;
@@ -211,6 +211,15 @@
 
     form .note {
         clear: left;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    form textarea {
+        width: 98%;
+        height: 130px;
     }
 
     fieldset {
@@ -380,11 +389,16 @@
         height: 1%;
     }
 
-        #footer, #footer #meta {
-            border-top: 1px solid #ddd;
-            position: relative;
-            top: 10px;
-        }
+    .contactus {
+        background: inherit;
+        height: 1%;
+    }
+
+    #footer, #footer #meta {
+        border-top: 1px solid #ddd;
+        position: relative;
+        top: 10px;
+    }
 
     #footer {
         font-size: 11px;
@@ -687,9 +701,24 @@
         padding: 20px 20px 9px;
     }
 
-        .section > h2, .section ul {
-            clear: left;
+    .contactus {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        border-color: #006bd5;
+        margin: 0 0 10px 0;
+        overflow: hidden;
+        padding: 20px 8px 9px;
+    }
+
+        .contactus > h2 {
+            color: #fb9415;
         }
+
+    .section > h2, .section ul {
+        clear: left;
+    }
 
     body.rtl .section > h2, body.rtl .section ul {
         clear: right;
@@ -974,64 +1003,71 @@
         clear: right;
     }
 
-    .body-sections {
-        height: 720px;
-        clear: both;
+    .contactus {
+        margin-left: 4px;
+        top: 0px;
+        width: 150px;
+        height: auto;
+        float: right;
         position: relative;
     }
 
-        .body-sections .body-section {
+    .minisections {
+        height: 200px;
+        /*overflow: hidden;*/
+        clear: right;
+        position: relative;
+        border: solid;
+        border-color: orange;
+    }
+
+        .minisections .minisection {
             margin: 0px;
             top: 0px;
-            width: 28% !important;
-            height: 600px;
+            width: 30% !important;
+            height: 200px;
             float: left;
             position: absolute;
         }
 
-        .body-sections .pos-1 {
-            left: 0px;
+        .minisections .pos-1 {
+            left: 0%;
         }
 
-        .body-sections .pos-2 {
-            left: 50%;
+        .minisections .pos-2 {
+            left: 29%;
         }
 
-        .body-sections .pos-3 {
-            right: 0%;
+        .minisections .pos-3 {
+            left: 58%;
         }
-
 
     .sections {
-        height: 360px;
+        height: 400px;
         overflow: hidden;
-        clear: both;
+        clear: left;
         position: relative;
     }
 
         .sections .section {
             margin: 0px;
             top: 0px;
-            width: 28% !important;
-            height: 320px;
+            width: 27% !important;
+            height: 380px;
             float: left;
             position: absolute;
         }
 
         .sections .pos-1 {
-            left: 0px;
+            left: 0%;
         }
 
         .sections .pos-2 {
-            left: 34%;
+            left: 33.5%;
         }
 
         .sections .pos-3 {
             right: 0%;
-        }
-
-        .sections .pos-4 {
-            right: 0px;
         }
 
     body.rtl .sections .section {
@@ -1123,6 +1159,34 @@
         font-weight: bold;
         border: 1px solid #ddd;
     }*/
+
+    /* Start: Styles for validation helpers
+-----------------------------------------------------------*/
+    .field-validation-error {
+        font-size: small;
+        color: red;
+    }
+
+    .field-validation-valid {
+        display: none;
+    }
+
+    .input-validation-error {
+        border: 1px solid red;
+        background-color: #ffeeee;
+    }
+
+    .validation-summary-errors {
+        font-weight: normal;
+        font-size: small;
+        color: red;
+    }
+
+    .validation-summary-valid {
+        display: none;
+    }
+    /* -----------------------------------------------------------
+        End: Styles for validation helpers*/
 }
 
 .icon42 {
