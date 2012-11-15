@@ -11,7 +11,7 @@
     }
 
     html {
-        background: #eee url(//www.google.com/apps/images/core/header.png) repeat-x;
+        background: #eee url(images/header.png) repeat-x;
         font: 13px/20px arial,sans-serif;
     }
 
@@ -164,7 +164,7 @@
     }
 
     form ul input, form div input, form .f-min {
-        width: auto;
+        width: 98%;
     }
 
     /*form input, form textarea {
@@ -270,7 +270,7 @@
         width: 950px;
     }
 
-    #stage, #contact, #article, #footer, #footer div {
+    #stage, #article, #footer, #footer div {
         clear: both;
     }
 
@@ -598,9 +598,8 @@
     #header div {
         bottom: 10px;
         position: absolute;
-        right: 20px;
+        right: 2px;
         top: 20px;
-        width: 200px;
     }
 
     * > #stage div {
@@ -706,14 +705,14 @@
         -webkit-border-radius: 5px;
         border: 1px solid #ddd;
         border-radius: 5px;
-        border-color: #006bd5;
+        /*border-color:none;*/ /*#006bd5;*/
         margin: 0 0 10px 0;
         overflow: hidden;
         padding: 20px 8px 9px;
     }
 
         .contactus > h2 {
-            color: #fb9415;
+            color: #fa9229;
         }
 
     .section > h2, .section ul {
@@ -1144,14 +1143,6 @@
     .type-4 img {
         display: none;
     }
-
-    #contact {
-        max-width: 84px;
-        min-height: 100px;
-        margin-left: 400px;
-        padding: 5px 10px 10px 20px;
-        border: 1px solid #ddd;
-    }
     /*.image-section 
     {
         float: left;
@@ -1169,6 +1160,8 @@
 
     .field-validation-valid {
         display: none;
+        clear:left;
+        
     }
 
     .input-validation-error {

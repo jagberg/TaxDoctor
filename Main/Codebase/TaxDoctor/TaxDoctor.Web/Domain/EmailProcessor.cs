@@ -19,7 +19,6 @@ namespace TaxDoctor.Web
                 EnableSsl = true
             };
             client.Send("taxdoctorsa@gmail.com", "jagberg@gmail.com", "test", GetContactEmailBody(contact));
-           
         }
 
         private string GetContactEmailBody(ContactModel contact)
