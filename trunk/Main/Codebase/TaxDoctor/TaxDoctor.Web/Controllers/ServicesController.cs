@@ -27,11 +27,10 @@ namespace TaxDoctor.Web.Controllers
 
         public ActionResult Bookkeeping() { return View(); }
         public ActionResult FinancialStatements() { return View(); }
-        public ActionResult CashFlow() { return View(); }
+        public ActionResult CompanyFormations() { return View(); }
         public ActionResult BusinessPlans() { return View(); }
-        public ActionResult PayrollPAYE() { return View(); }
+        public ActionResult Payroll() { return View(); }
         public ActionResult TaxServices() { return View(); }
         public ActionResult BankLoanApplications() { return View(); }
-        public ActionResult CreditorsReconciliations() { return View(); }
     }
 }
