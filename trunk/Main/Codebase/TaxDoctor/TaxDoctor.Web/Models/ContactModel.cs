@@ -22,8 +22,8 @@ namespace TaxDoctor.Web
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "* Please enter")]
-        //[EmailAddress]
+        [EmailAddress(ErrorMessage="* Invalid email")]
+        //[Required(ErrorMessage = "* Please enter")]
         public string EmailAddress { get; set; }
 
         public WorkType RequiredWork { get; set; }
@@ -31,5 +31,14 @@ namespace TaxDoctor.Web
         [Required(ErrorMessage = "* Please enter")]
         [DataType(DataType.MultilineText)]
         public string Comment { get; set; }
+
+        public bool IsValid()
+        {
+            if (string.IsNullOrWhiteSpace(this.EmailAddress) && string.IsNullOrWhiteSpace(this.PhoneNumber))
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }
