@@ -1,5 +1,8 @@
 ﻿@model TaxDoctor.Web.ContactModel
-
+@{
+    Layout = "";
+}
+@*@{ Html.RenderAction("ContactUs", "Contact", Model); }*@
 @using (Html.BeginForm())
 {
     <div>Name: @Html.ValidationMessageFor(x=>x.Name) @Html.EditorFor(x => x.Name)</div>

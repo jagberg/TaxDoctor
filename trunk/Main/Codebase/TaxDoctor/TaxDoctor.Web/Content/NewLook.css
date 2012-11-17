@@ -1016,8 +1016,6 @@
         /*overflow: hidden;*/
         clear: right;
         position: relative;
-        border: solid;
-        border-color: orange;
     }
 
         .minisections .minisection {

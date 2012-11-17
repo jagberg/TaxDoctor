@@ -8,13 +8,13 @@ namespace TaxDoctor.Web.Controllers
 {
     public class ContactController : Controller
     {
-        public ActionResult ContactUs()
+        public PartialViewResult ContactUs()
         {
-            return View();
+            return PartialView();
         }
 
         [HttpPost]
-        public ActionResult ContactUsForm(ContactModel contact)
+        public ActionResult ContactUs(ContactModel contact)
         {
             if (string.IsNullOrWhiteSpace(contact.EmailAddress) && string.IsNullOrWhiteSpace(contact.PhoneNumber))
             {
@@ -35,14 +35,16 @@ namespace TaxDoctor.Web.Controllers
                     //TODO: Log exception
                     //ModelState.AddModelError("all", "Apologies, we're unable to send your contact details at present. Please call or email instead.");
 
-                    return View(contact);
+                    return PartialView(contact);
                 }
 
-                return RedirectToAction("ThankYou", new { name = contact.Name });
+                return RedirectToAction("ContactUs");
+                //return RedirectToAction("ThankYou", new { name = contact.Name });
             }
             else
             {
-                return View(contact);
+                return PartialView(contact);
+                //return View("ContactUs");
             }
         }
 
