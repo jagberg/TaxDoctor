@@ -1,8 +1,7 @@
 ﻿@model TaxDoctor.Web.ContactModel
-
-@using (Html.BeginForm())
+@using (Ajax.BeginForm("ContactUsForm", "Contact", new AjaxOptions { UpdateTargetId = "ContactForm" }))
 {
-    <div>Name: @Html.ValidationMessageFor(x=>x.Name) @Html.EditorFor(x => x.Name)</div>
+    <div>Name: @Html.ValidationMessageFor(x => x.Name) @Html.EditorFor(x => x.Name)</div>
 
     <div>Phone Number: @Html.ValidationMessageFor(x => x.PhoneNumber) @Html.EditorFor(x => x.PhoneNumber)</div>
 
@@ -16,6 +15,7 @@
     
     <div class="field-validation-error">@TempData["EmailException"]</div>
     
-    @*<div>@Html.ValidationMessageFor(x=>x.</div>*@
+    <div>@TempData["ContactUsSuccessMessage"]</div>
+    
+@*<div>@Html.ValidationMessageFor(x=>x.</div>*@
 }
-
