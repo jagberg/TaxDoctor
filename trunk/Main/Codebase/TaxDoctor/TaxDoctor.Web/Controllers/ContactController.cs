@@ -8,13 +8,13 @@ namespace TaxDoctor.Web.Controllers
 {
     public class ContactController : Controller
     {
-        public PartialViewResult ContactUs()
+        public ViewResult ContactUs()
         {
-            return PartialView();
+            return View();
         }
 
         [HttpPost]
-        public ActionResult ContactUs(ContactModel contact)
+        public ActionResult ContactUsForm(ContactModel contact)
         {
             if (string.IsNullOrWhiteSpace(contact.EmailAddress) && string.IsNullOrWhiteSpace(contact.PhoneNumber))
             {
@@ -38,8 +38,9 @@ namespace TaxDoctor.Web.Controllers
                     return PartialView(contact);
                 }
 
+                //return RedirectToAction("ContactUs");
+                TempData["ContactUsSuccessMessage"] = new HtmlString(string.Format("Thanks <b>{0}</b>. We will be in touch soon...", contact.Name));
                 return RedirectToAction("ContactUs");
-                //return RedirectToAction("ThankYou", new { name = contact.Name });
             }
             else
             {
@@ -50,7 +51,7 @@ namespace TaxDoctor.Web.Controllers
 
         public ActionResult ThankYou(string name)
         {
-            return View((object)name);
+            return PartialView((object)name);
         }
     }
 }

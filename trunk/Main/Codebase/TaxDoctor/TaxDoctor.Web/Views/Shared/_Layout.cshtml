@@ -39,6 +39,13 @@
     <link href="@Url.Content("~/Content/NewLook.css")" rel="stylesheet" type="text/css" />
     @*<link href="//www.google.com/apps/css/default.css" rel="stylesheet">*@
     <link href="/apps/intl/en/css/apps-button-hp.css" rel="stylesheet">
+
+    @*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    *@
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+
     <meta content="Get constant enterprise innovation with Google, saving your company the time, money and hassle of managing these IT solutions yourself."
         name="description">
     <meta content="google apps, hosted, online, cloud, applications, email, gmail, calendar, intranet, website spam, security, cloud computing, saas, software as a service, hosted email, business email, enterprise email, webmail"
@@ -111,6 +118,7 @@
         </li>
         <li><strong>Training</strong>
             <ul>
+                <li>@Html.ActionLink("Packages", "Packages", "Training")</li>
                 <li>@Html.ActionLink("Accounting", "Accounting", "Training")</li>
                 <li>@Html.ActionLink("QuickBooks", "QuickBooks", "Training")</li>
                 <li>@Html.ActionLink("Pastel Payroll", "Pastel", "Training")</li>
@@ -126,9 +134,12 @@
         </h2>*@
     </div>
     <div id="article">
+
         <div class="contactus">
-            <h2>Contact Us</h2>
-            @{ Html.RenderPartial("ContactUs"); }
+            <div id="ContactForm">
+                <h2>Contact Us</h2>
+                @{ Html.RenderAction("ContactUs", "Contact"); }
+            </div>
         </div>
         @RenderBody()
     </div>
@@ -169,7 +180,7 @@
             © 2012 Tax Doctor
             <ul>
                 <li><a href="http://twitter.com/taxdoctorsa">
-                    <img alt="Twitter" src="//www.google.com/apps/images/core/icons/twitter.png"></a>
+                    <img alt="Twitter" src="@Url.Content("~/Content/images/twitter.png")"></a>
                 </li>
             </ul>
         </div>

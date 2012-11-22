@@ -33,10 +33,8 @@ namespace TaxDoctor.Web.Controllers
             return View();
         }
 
-        public ActionResult Packages(string message)
+        public ActionResult Packages()
         {
-            ViewBag.Message = message;
-
             return View();
         }
     }
