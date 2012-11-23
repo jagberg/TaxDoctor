@@ -2,8 +2,8 @@
 @{
     Layout = "";
 }
-@{ Html.RenderPartial("ContactUsForm", @Model); }
-@*@using (Html.BeginForm())
+
+@using (Ajax.BeginForm("ContactUs", "Contact", new AjaxOptions { UpdateTargetId = "ContactForm" }))
 {
     <div>Name: @Html.ValidationMessageFor(x => x.Name) @Html.EditorFor(x => x.Name)</div>
 
@@ -19,5 +19,5 @@
     
     <div class="field-validation-error">@TempData["EmailException"]</div>
     
-}*@
-
+    <div>@TempData["ContactUsSuccessMessage"]</div>
+}

@@ -14,7 +14,7 @@ namespace TaxDoctor.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult ContactUsForm(ContactModel contact)
+        public ActionResult ContactUs(ContactModel contact)
         {
             if (string.IsNullOrWhiteSpace(contact.EmailAddress) && string.IsNullOrWhiteSpace(contact.PhoneNumber))
             {
@@ -33,25 +33,18 @@ namespace TaxDoctor.Web.Controllers
                 {
                     TempData["EmailException"] = "Apologies, we're unable to send your contact details to us at present. Please call or email us instead.";
                     //TODO: Log exception
-                    //ModelState.AddModelError("all", "Apologies, we're unable to send your contact details at present. Please call or email instead.");
-
+                    
                     return PartialView(contact);
                 }
 
-                //return RedirectToAction("ContactUs");
                 TempData["ContactUsSuccessMessage"] = new HtmlString(string.Format("Thanks <b>{0}</b>. We will be in touch soon...", contact.Name));
+                
                 return RedirectToAction("ContactUs");
             }
             else
             {
                 return PartialView(contact);
-                //return View("ContactUs");
             }
-        }
-
-        public ActionResult ThankYou(string name)
-        {
-            return PartialView((object)name);
         }
     }
 }
