@@ -211,12 +211,6 @@
     <Content Include="Views\Contact\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Contact\ThankYou.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Contact\ContactUsForm.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Services\CompanyFormations.cshtml" />
   </ItemGroup>
   <ItemGroup>
