@@ -85,7 +85,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\excel.jpg" />
     <Content Include="Content\images\header.png" />
+    <Content Include="Content\images\Home\tax.jpg" />
+    <Content Include="Content\images\pastel.jpg" />
+    <Content Include="Content\images\quickbooks.jpg" />
+    <Content Include="Content\images\tax.jpg" />
+    <Content Include="Content\images\taxdoctor-scope.jpg" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\NewLook.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

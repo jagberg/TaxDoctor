@@ -7,7 +7,7 @@
     }
 
     html, #nav a {
-        color: #000;
+        color: #444444;
     }
 
     html {
@@ -20,7 +20,7 @@
     }
 
     h1, h2, h3, th, td {
-        font-weight: normal;
+        font-weight: bold;
     }
 
     h2, h3 {
@@ -29,6 +29,7 @@
 
     h2 {
         font-size: 18px;
+        color: #222;
         margin: 0 0 15px;
     }
 
@@ -44,6 +45,10 @@
     h4 {
         font-size: 1em;
         margin: 10px 0 -10px;
+    }
+
+    b {
+        color: #222;    
     }
 
     p, blockquote, ul, ol, table, div {
@@ -1040,7 +1045,7 @@
         }
 
     .sections {
-        height: 400px;
+        height: 970px;
         overflow: hidden;
         clear: left;
         position: relative;
@@ -1049,8 +1054,8 @@
         .sections .section {
             margin: 0px;
             top: 0px;
-            width: 27% !important;
-            height: 380px;
+            width: 44% !important;
+            height: 430px;
             float: left;
             position: absolute;
         }
@@ -1060,11 +1065,13 @@
         }
 
         .sections .pos-2 {
-            left: 33.5%;
+            left: 50.5%;
         }
 
         .sections .pos-3 {
-            right: 0%;
+            left: 0%;
+            top:48%;
+            clear: both;
         }
 
     body.rtl .sections .section {
@@ -1138,8 +1145,21 @@
         float: left;
     }
 
-    .type-4 img {
-        display: none;
+    .image-package {
+        float: left;
+    }
+
+    .image-title {
+        float: right;
+    }
+
+    .image-section {
+        /*text-align: left;*/
+        float:right;
+        clear:none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
     }
     /*.image-section 
     {
@@ -1158,8 +1178,7 @@
 
     .field-validation-valid {
         display: none;
-        clear:left;
-        
+        clear: left;
     }
 
     .input-validation-error {
@@ -1215,7 +1234,7 @@
         font-weight: normal;
     }
 
-    #header form, #footer, #nav ul, #stage img, .type-4 img {
+    #header form, #footer, #nav ul, #stage img {
         display: none;
     }
 }
