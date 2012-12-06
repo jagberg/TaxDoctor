@@ -85,13 +85,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\excel.jpg" />
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\Home\tax.jpg" />
-    <Content Include="Content\images\pastel.jpg" />
-    <Content Include="Content\images\quickbooks.jpg" />
+    <Content Include="Content\images\Home\taxcalculator.jpg" />
+    <Content Include="Content\images\Home\taxdoctor.jpg" />
+    <Content Include="Content\images\Home\taxtraining.jpg" />
+    <Content Include="Content\images\Services\smallbusiness.jpg" />
+    <Content Include="Content\images\Services\taxarrow.jpg" />
+    <Content Include="Content\images\Services\taxbalance.jpg" />
+    <Content Include="Content\images\Services\taxfile.jpg" />
+    <Content Include="Content\images\Services\taxloanapproved.jpg" />
+    <Content Include="Content\images\Services\taxreports.jpg" />
+    <Content Include="Content\images\Services\taxtax.jpg" />
     <Content Include="Content\images\tax.jpg" />
-    <Content Include="Content\images\taxdoctor-scope.jpg" />
+    <Content Include="Content\images\taxarrow.jpg" />
+    <Content Include="Content\images\taxbalance.jpg" />
+    <Content Include="Content\images\Training\taxtraining.jpg" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\NewLook.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -218,9 +227,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Services\CompanyFormations.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\ContactUs.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

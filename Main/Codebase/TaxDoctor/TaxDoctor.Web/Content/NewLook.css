@@ -1045,7 +1045,7 @@
         }
 
     .sections {
-        height: 970px;
+        height: 620px;
         overflow: hidden;
         clear: left;
         position: relative;
@@ -1054,24 +1054,26 @@
         .sections .section {
             margin: 0px;
             top: 0px;
-            width: 44% !important;
-            height: 430px;
+            height: 315px;
             float: left;
             position: absolute;
         }
 
         .sections .pos-1 {
             left: 0%;
+            width: 44% !important;
         }
 
         .sections .pos-2 {
             left: 50.5%;
+            width: 44% !important;
         }
 
         .sections .pos-3 {
             left: 0%;
-            top:48%;
-            clear: both;
+            top:57%;
+            width:98% !important;
+            height: auto;
         }
 
     body.rtl .sections .section {
