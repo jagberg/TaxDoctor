@@ -85,13 +85,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Chart.css" />
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\Home\tax.jpg" />
     <Content Include="Content\images\Home\taxcalculator.jpg" />
     <Content Include="Content\images\Home\taxdoctor.jpg" />
     <Content Include="Content\images\Home\taxtraining.jpg" />
     <Content Include="Content\images\Services\smallbusiness.jpg" />
-    <Content Include="Content\images\Services\taxarrow.jpg" />
     <Content Include="Content\images\Services\taxbalance.jpg" />
     <Content Include="Content\images\Services\taxfile.jpg" />
     <Content Include="Content\images\Services\taxloanapproved.jpg" />
@@ -100,6 +100,9 @@
     <Content Include="Content\images\tax.jpg" />
     <Content Include="Content\images\taxarrow.jpg" />
     <Content Include="Content\images\taxbalance.jpg" />
+    <Content Include="Content\images\Training\excel.jpg" />
+    <Content Include="Content\images\Training\pastel.jpg" />
+    <Content Include="Content\images\Training\quickbooks.jpg" />
     <Content Include="Content\images\Training\taxtraining.jpg" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\NewLook.css" />
@@ -250,7 +253,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5699</DevelopmentServerPort>
+          <DevelopmentServerPort>33070</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
