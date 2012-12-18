@@ -48,7 +48,7 @@
     }
 
     b {
-        color: #222;    
+        color: #222;
     }
 
     p, blockquote, ul, ol, table, div {
@@ -184,6 +184,11 @@
         color: #000;
         margin: 10px 0 0;
         font-weight: bold;
+    }
+
+    form input, textarea {
+        font-family: inherit;
+        font-size: inherit;
     }
 
     form .f-c1, form .f-c2, form .f-c3, form .f-c4 {
@@ -345,48 +350,6 @@
     body.rtl #header form {
         left: 20px;
         right: auto;
-    }
-
-    #sign-in, #sign-in * {
-        color: #000 !important;
-    }
-
-    #sign-in {
-        background: #fff;
-        display: none;
-        margin-bottom: 0 !important;
-        padding: 0 10px 9px !important;
-        top: 9px !important;
-        width: 450px;
-    }
-
-        #sign-in label {
-            display: inline;
-            font-weight: normal;
-        }
-
-            #sign-in label#domain {
-                display: block;
-                font-weight: bold;
-                padding: 0 0 3px;
-            }
-
-        #sign-in input, #sign-in textarea {
-            width: auto;
-        }
-
-        #sign-in select {
-            background: inherit !important;
-        }
-
-        #sign-in img {
-            float: right;
-            position: relative;
-            top: 10px;
-        }
-
-    body.rtl #sign-in img {
-        float: left;
     }
 
     #footer, .section {
@@ -763,45 +726,6 @@
         margin-bottom: 30px;
     }
 
-    a.action, a.article, a.stories, a.videos {
-        background-repeat: no-repeat;
-        line-height: 19px;
-        padding-bottom: 1px;
-        padding-left: 22px;
-    }
-
-    a.action {
-        background-image: url(//www.google.com/images/icons/feature/play-b16.png);
-        font-weight: bold;
-    }
-
-    a.article {
-        background-image: url(//www.google.com/images/icons/feature/articles-lb16.png);
-    }
-
-    a.stories {
-        background-image: url(//www.google.com/images/icons/feature/people-b16.png);
-    }
-
-    a.videos {
-        background-image: url(//www.google.com/images/icons/feature/clapper-b16.png);
-    }
-
-    body.rtl a.action, body.rtl a.stories, body.rtl a.videos {
-        background-position: -100% -100%;
-        padding-left: 0;
-    }
-
-    * > body.rtl a.action, * > body.rtl a.stories, * > body.rtl a.videos {
-        background-position: top right;
-        padding-right: 22px;
-    }
-
-    * + html body.rtl a.action, * + html body.rtl a.stories, * + html body.rtl a.videos {
-        background-position: -100% -100%;
-        padding: 0;
-    }
-
     .g-button-basic, .g-button-basic div {
         margin: 0;
         position: static !important;
@@ -1071,8 +995,8 @@
 
         .sections .pos-3 {
             left: 0%;
-            top:57%;
-            width:98% !important;
+            top: 57%;
+            width: 98% !important;
             height: auto;
         }
 
@@ -1157,8 +1081,8 @@
 
     .image-section {
         /*text-align: left;*/
-        float:right;
-        clear:none;
+        float: right;
+        clear: none;
         margin-top: 0px;
         margin-bottom: 0px;
         padding: 0px;
@@ -1199,6 +1123,55 @@
     }
     /* -----------------------------------------------------------
         End: Styles for validation helpers*/
+
+    /* Start: Styles for table
+-----------------------------------------------------------*/
+    table {
+        margin: 10px 10px 10px 10px;
+        width: 90%;
+        border-top: 1px solid #e5eff8;
+        border-right: 1px solid #e5eff8;
+        border-left: 1px solid #e5eff8;
+        border-collapse: collapse;
+    }
+
+        table th {
+            text-align: left;
+        }
+
+        table thead th {
+            text-align: center;
+            font-size: large;
+            font: bold 1.2em/2em;
+            color: inherit;
+            height: 50px;
+            width: 33%;
+        }
+
+        table tbody td {
+            text-align: center;
+            font-weight: inherit;
+            /*color:#678197;*/
+            border-bottom: 1px solid #e5eff8;
+            border-left: 1px solid #e5eff8;
+            padding: .3em 1em;
+            /*text-align:center;*/
+        }
+
+        table tbody th {
+            font-weight: normal;
+        }
+
+    tbody tr.odd td {
+        background: green;
+    }
+
+    thead th.odd {
+        background: red;
+    }
+
+    /* End: Styles for validation helpers
+-----------------------------------------------------------*/
 }
 
 .icon42 {

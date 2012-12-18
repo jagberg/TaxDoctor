@@ -50,7 +50,7 @@
         name="description">
     <meta content="google apps, hosted, online, cloud, applications, email, gmail, calendar, intranet, website spam, security, cloud computing, saas, software as a service, hosted email, business email, enterprise email, webmail"
         name="keywords">
-    <style>
+    @*  <style>
         .type-3 .g-button-basic {
             float: right;
             margin: 0 0 0 20px;
@@ -88,7 +88,7 @@
         a.c1 {
             font-weight: bold;
         }
-    </style>
+    </style>*@
 </head>
 <body>
     <div id="header">
@@ -147,23 +147,19 @@
         <div>
             <dl>
                 <dt>Our Services </dt>
-                <dd>
-                    <a href="/accounting/index.html">Accounting&nbsp;</a></dd>
-                <dd>
-                    <a href="/bookkeeping/index.html">Bookkeeping&nbsp;</a></dd>
-                <dd>
-                    <a href="/business plans/index.html">Business Plans&nbsp;</a></dd>
-                <dd>
-                    <a href="/payroll paye/index.html">Payroll PAYE&nbsp;</a></dd>
-                <dd>
-                    <a href="/tax services/index.html">Tax Services&nbsp;</a></dd>
+                <dd>@Html.ActionLink("Accounting", "Accounting", "Services")</dd>
+                <dd>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services")</dd>
+                <dd>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services")</dd>
+                <dd>@Html.ActionLink("Company Formations", "CompanyFormations", "Services")</dd>
+                <dd>@Html.ActionLink("Payroll", "Payroll", "Services")</dd>
+                <dd>@Html.ActionLink("Tax Services", "TaxServices", "Services")</dd>
             </dl>
             <dl>
                 <dt>Training</dt>
                 <dd>
                     @Html.ActionLink("Accounting", "Accounting", "Training")
                 </dd>
-                <br />
+                <dd />
                 <dt>Package Training</dt>
                 <dd>
                     @Html.ActionLink("QuickBooks", "QuickBooks", "Training")

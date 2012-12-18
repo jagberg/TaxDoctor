@@ -27,7 +27,7 @@ namespace TaxDoctor.Web.Controllers
                 try
                 {
                     EmailProcessor emailProcessor = new EmailProcessor();
-                    //emailProcessor.SendEmail(contact);
+                    emailProcessor.SendEmail(contact);
                 }
                 catch (System.Net.Mail.SmtpException smtpEx)
                 {
