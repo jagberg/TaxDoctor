@@ -8,7 +8,7 @@ namespace TaxDoctor.Web.Controllers
 {
     public class TrainingController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Training()
         {
             return View();
         }
@@ -29,11 +29,6 @@ namespace TaxDoctor.Web.Controllers
         }
 
         public ActionResult QuickBooks()
-        {
-            return View();
-        }
-
-        public ActionResult Packages()
         {
             return View();
         }
