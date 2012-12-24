@@ -3,6 +3,14 @@
     Layout = "";
 }
 
+<div>
+    <ul>
+        <li>Tel: 011 787-7279</li>
+        <li>Cell: 073 874-6774</li>
+    </ul>
+</div>
+<hr />
+
 @using (Ajax.BeginForm("ContactUs", "Contact", new AjaxOptions { UpdateTargetId = "ContactForm" }))
 {
     <div>Name: @Html.ValidationMessageFor(x => x.Name) @Html.EditorFor(x => x.Name)</div>

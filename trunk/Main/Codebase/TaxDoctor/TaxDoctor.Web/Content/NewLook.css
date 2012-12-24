@@ -1,6 +1,4 @@
-﻿/*@import url(//www.google.com/css/modules/buttons/g-button-chocobo.css);
-@import url(//fonts.googleapis.com/css?family=Droid+Sans&subset=latin);*/
-@media screen,projection {
+﻿@media screen,projection {
     * {
         margin: 0;
         padding: 0;
@@ -53,11 +51,6 @@
 
     p, blockquote, ul, ol, table, div {
         margin: 10px 0;
-    }
-
-    blockquote {
-        background: url(//www.google.com/apps/images/core/quote.png) no-repeat;
-        padding-left: 40px;
     }
 
     pre, code {
@@ -191,38 +184,6 @@
         font-size: inherit;
     }
 
-    form .f-c1, form .f-c2, form .f-c3, form .f-c4 {
-        overflow: hidden;
-    }
-
-        form .f-c1 li, form .f-c2 li, form .f-c3 li, form .f-c4 li {
-            float: left;
-        }
-
-        form .f-c1 li {
-            width: 100%;
-        }
-
-        form .f-c2 li {
-            width: 50%;
-        }
-
-        form .f-c3 li {
-            width: 33%;
-        }
-
-        form .f-c4 li {
-            width: 25%;
-        }
-
-    form .f-compact {
-        width: 50px;
-    }
-
-    form .note {
-        clear: left;
-    }
-
     input {
         width: 100px;
     }
@@ -230,22 +191,6 @@
     form textarea {
         width: 98%;
         height: 130px;
-    }
-
-    fieldset {
-        border: 0;
-    }
-
-    legend {
-        display: none;
-    }
-
-    body.rtl form .f-c1 li, body.rtl form .f-c2 li, body.rtl form .f-c3 li, body.rtl form .f-c4 li {
-        float: right;
-    }
-
-    body.rtl form .note {
-        clear: right;
     }
 
     body #header, body #nav, body #stage, body #article, body #footer div, body.lock #header, body.lock #nav, body.lock #stage, body.lock #article, body.lock #footer div {
@@ -298,11 +243,11 @@
         }
 
         #header h1 {
-            font: 26px/43px 'droid sans',arial,sans-serif;
+            font: 33px/50px 'droid sans',arial,sans-serif;
             left: 20px;
             letter-spacing: -1px;
             text-shadow: 1px 1px 1px #0f4db8;
-            top: 29px;
+            top: 20px;
             width: 50%;
         }
 
@@ -603,41 +548,6 @@
         width: auto;
     }
 
-    #aside {
-        display: inline;
-        float: right;
-        left: 10px;
-        margin: 0 -230px 0 0;
-        position: relative;
-        width: 220px;
-    }
-
-    * > #aside {
-        left: auto;
-    }
-
-    * + html #aside {
-        left: 10px;
-    }
-
-        #aside blockquote cite, #aside img, #aside .logos {
-            display: block;
-        }
-
-        #aside blockquote cite {
-            margin-left: -40px;
-        }
-
-        #aside img {
-            margin: 0 auto 10px;
-        }
-
-        #aside .logos {
-            float: none;
-            margin: 10px 0;
-            width: auto;
-        }
-
     body.rtl #article.extra {
         padding-left: 230px;
         padding-right: 0;
@@ -650,15 +560,15 @@
         margin: 0 0 0 -230px;
     }
 
-    * > body.rtl #aside {
+    * > body.rtl {
         right: auto;
     }
 
-    * + html body.rtl #aside {
+    * + html body.rtl {
         right: 10px;
     }
 
-    .section, #sign-in {
+    .section {
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         border: 1px solid #ddd;
@@ -726,28 +636,20 @@
         margin-bottom: 30px;
     }
 
-    .g-button-basic, .g-button-basic div {
+    .txd-button-basic, .txd-button-basic div {
         margin: 0;
         position: static !important;
     }
 
-    .g-button-basic {
+    .txd-button-basic {
         width: 200px !important;
     }
 
-        .g-button-basic div, .g-button-basic div span, .g-button-basic div span span {
-            background-image: url(//www.google.com/postini/images/g-button-chocobo-basic-2.png);
-        }
-
-        .g-button-basic div {
+        .txd-button-basic div {
             width: auto !important;
         }
 
-            .g-button-basic div span span a {
-                background-image: url(//www.google.com/postini/images/postini_button_new_corner.png);
-            }
-
-        .g-button-basic a {
+        .txd-button-basic a {
             font-weight: normal !important;
         }
 
@@ -784,77 +686,6 @@
         clear: right;
     }
 
-    .feature {
-        margin: 0;
-        position: relative;
-    }
-
-        .feature table {
-            margin-right: 30%;
-            width: 70%;
-        }
-
-        .feature tbody tr:hover .feature-details {
-            background: transparent;
-        }
-
-        .feature tbody tr.highlight {
-            background: #eee;
-        }
-
-        .feature .feature-details {
-            background: #fff !important;
-            bottom: 40%;
-            display: none;
-            left: 70%;
-            padding: 0 5%;
-            position: absolute;
-            text-align: left;
-            width: 200px;
-        }
-
-    * > .feature .feature-details {
-        width: 20%;
-    }
-
-    * + html .feature .feature-details {
-        width: 200px;
-    }
-
-    .feature .highlight .feature-details {
-        display: inline;
-    }
-
-    .feature [src$='checkmark-b14x13.png'] {
-        position: relative;
-        top: 3px;
-    }
-
-    body.rtl .feature table {
-        margin-left: 30%;
-        margin-right: 0;
-    }
-
-    body.rtl .feature .feature-details {
-        left: auto;
-        right: 70%;
-        text-align: right;
-    }
-
-    p.intro, #survey a {
-        font-weight: bold;
-    }
-
-    .intro {
-        margin-top: 0;
-    }
-
-    .info {
-        background: url(//www.google.com/images/icons/feature/info-b32.png) no-repeat;
-        min-height: 32px;
-        padding-left: 42px;
-    }
-
     .icon {
         float: left;
         margin: 0 10px 10px 0;
@@ -862,59 +693,6 @@
 
     .meta, .note, .media div p {
         color: #666;
-    }
-
-    .logos {
-        display: table-cell;
-        float: right;
-        margin: 0 0 10px 5%;
-        text-align: right;
-        width: 75%;
-    }
-
-        .logos img {
-            margin: 0 10px 10px;
-            vertical-align: middle;
-        }
-
-    .twisty-expand, .twisty-collapse {
-        background-position: 0 1px;
-        background-repeat: no-repeat;
-        padding-left: 20px;
-    }
-
-    .twisty-expand {
-        background-image: url(//www.google.com/enterprise/images/zip_plus.gif);
-    }
-
-    .twisty-collapse {
-        background-image: url(//www.google.com/enterprise/images/zip_minus.gif);
-    }
-
-    .aux {
-        clear: left;
-    }
-
-    .helper {
-        display: none;
-    }
-
-    .clearfix:after {
-        clear: both;
-        content: '.';
-        display: block;
-        height: 0;
-        line-height: 0;
-        visibility: hidden;
-    }
-
-    .clearfix {
-        _height: 1px;
-        zoom: 1;
-    }
-
-    body.rtl .info {
-        padding-right: 42px;
     }
 
     body.rtl .icon {
@@ -939,34 +717,6 @@
         float: right;
         position: relative;
     }
-
-    .minisections {
-        height: 200px;
-        /*overflow: hidden;*/
-        clear: right;
-        position: relative;
-    }
-
-        .minisections .minisection {
-            margin: 0px;
-            top: 0px;
-            width: 30% !important;
-            height: 200px;
-            float: left;
-            position: absolute;
-        }
-
-        .minisections .pos-1 {
-            left: 0%;
-        }
-
-        .minisections .pos-2 {
-            left: 29%;
-        }
-
-        .minisections .pos-3 {
-            left: 58%;
-        }
 
     .sections {
         height: 620px;
@@ -1046,12 +796,12 @@
         width: 20%;
     }
 
-    .type-4 .g-button-basic {
+    .type-4 .txd-button-basic {
         margin: 0px 0px 0px 20px;
         float: right;
     }
 
-        .type-4 .g-button-basic div {
+        .type-4 .txd-button-basic div {
             margin: 0px !important;
             width: auto !important;
             float: none;
@@ -1066,7 +816,7 @@
         margin: 0px 0px 0px 5%;
     }
 
-    body.rtl .type-4 .g-button-basic {
+    body.rtl .type-4 .txd-button-basic {
         margin: 0px 20px 0px 0px;
         float: left;
     }
@@ -1087,13 +837,6 @@
         margin-bottom: 0px;
         padding: 0px;
     }
-    /*.image-section 
-    {
-        float: left;
-        position: relative;
-        font-weight: bold;
-        border: 1px solid #ddd;
-    }*/
 
     /* Start: Styles for validation helpers
 -----------------------------------------------------------*/
@@ -1172,31 +915,6 @@
 
     /* End: Styles for validation helpers
 -----------------------------------------------------------*/
-}
-
-.icon42 {
-    min-height: 52px;
-    padding: 0 0 10px 52px;
-}
-
-.docs42 {
-    background: url(//google.com/images/icons/product/docs-42.png) no-repeat;
-}
-
-.sites42 {
-    background: url(//google.com/images/icons/product/sites-42.png) no-repeat;
-}
-
-.discussions42 {
-    background: url(//google.com/images/icons/product/discussions-42.gif) no-repeat;
-}
-
-.api42 {
-    background: url(//google.com/images/icons/feature/api-b42.png) no-repeat;
-}
-
-.appengine-gbtn div span span a {
-    padding-right: 13px;
 }
 
 @media print {
