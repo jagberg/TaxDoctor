@@ -8,6 +8,8 @@ namespace TaxDoctor.Web.Controllers
 {
     public class ContactController : Controller
     {
+        ILogger logger = new Logger();
+        
         public ViewResult ContactUs()
         {
             return View();
@@ -28,11 +30,14 @@ namespace TaxDoctor.Web.Controllers
                 {
                     EmailProcessor emailProcessor = new EmailProcessor();
                     emailProcessor.SendEmail(contact);
+
+                    logger.Log(string.Format("Successfully emailed. Name: '{0}', email: '{1}', tel: '{2}', message '{3}'", contact.Name, contact.EmailAddress, contact.PhoneNumber, contact.Comment), ErrorType.Information);
                 }
-                catch (System.Net.Mail.SmtpException smtpEx)
+                catch (Exception ex)
                 {
                     TempData["EmailException"] = "Apologies, we're unable to send your contact details to us at present. Please call or email us instead.";
-                    //TODO: Log exception
+                    
+                    logger.Log(string.Format("Could not send email to '{0}', email: '{1}', tel: '{2}', message: '{3}'/r/nException: {4}", contact.Name, contact.EmailAddress, contact.PhoneNumber, contact.Comment, ex.ToString()), ErrorType.Error);
                     
                     return PartialView(contact);
                 }

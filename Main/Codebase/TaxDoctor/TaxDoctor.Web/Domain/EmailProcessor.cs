@@ -11,16 +11,25 @@ namespace TaxDoctor.Web
 {
     public class EmailProcessor
     {
+        /// <summary>
+        /// Send email through Smtp client.
+        /// </summary>
+        /// <param name="contact"></param>
         public void SendEmail(ContactModel contact)
         {
-            var client = new SmtpClient("smtp.gmail.com", 587)
+            var client = new SmtpClient(Config.EmailSmtp, Config.EmailSmtpPort)
             {
-                Credentials = new NetworkCredential("taxdoctorsa@gmail.com", "Casper#73"),
+                Credentials = new NetworkCredential(Config.EmailUsername, Config.EmailPassword),
                 EnableSsl = true
             };
-            client.Send("taxdoctorsa@gmail.com", "jagberg@gmail.com", "test", GetContactEmailBody(contact));
+            client.Send(Config.EmailFrom, Config.EmailTo, Config.EmailSubject, GetContactEmailBody(contact));
         }
 
+        /// <summary>
+        /// Format email body.
+        /// </summary>
+        /// <param name="contact"></param>
+        /// <returns></returns>
         private string GetContactEmailBody(ContactModel contact)
         {
             StringBuilder body = new StringBuilder();
