@@ -35,6 +35,8 @@ namespace TaxDoctor.Web
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            Logger.Configure();
         }
     }
 }
