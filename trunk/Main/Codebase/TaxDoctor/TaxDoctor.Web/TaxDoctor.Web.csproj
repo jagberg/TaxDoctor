@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <PrecompileBeforePublish>true</PrecompileBeforePublish>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,11 +48,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FM">
-      <HintPath>..\packages\FM.Net45.2.1.1\lib\FM.dll</HintPath>
-    </Reference>
-    <Reference Include="FM.Log4Net">
-      <HintPath>..\packages\FM.Log4Net.Net45.2.1.1\lib\FM.Log4Net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
       <Private>True</Private>
