@@ -1,4 +1,4 @@
-﻿using FM.Log4Net;
+﻿using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace TaxDoctor.Web
 
     public class Logger : ILogger
     {
-        private static readonly FM.Log4Net.LogProvider log = new LogProvider();
+        private static readonly ILog log = log4net.LogManager.GetLogger("TaxDoctorLogger");
 
         public Logger()
         {
@@ -27,7 +27,7 @@ namespace TaxDoctor.Web
 
         internal static void Configure()
         {
-            //log4net.Config.XmlConfigurator.Configure();
+            log4net.Config.XmlConfigurator.Configure();
         }
 
         public void Log(string message, ErrorType errType)
