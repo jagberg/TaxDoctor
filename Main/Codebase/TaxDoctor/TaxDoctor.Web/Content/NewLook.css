@@ -184,8 +184,9 @@
         font-size: inherit;
     }
 
-    input {
-        width: 100px;
+    .actionButtons {
+        width: 120px;
+        height: 30px;
     }
 
     form textarea {
@@ -576,6 +577,7 @@
         margin: 0 0 10px 0;
         overflow: hidden;
         padding: 20px 20px 9px;
+        max-width: 700px;
     }
 
     .contactus {
