@@ -134,12 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Domain\EmailProcessor.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Helper\MetaDescriptionAttribute.cs" />
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Helper\MetaKeywordsAttribute.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -237,6 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Prices\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -287,6 +291,8 @@
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Properties\PublishProfiles\mytaxdoctor.co.za - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mytaxdoctor.co.za - Web Deploy.pubxml" />
+    <Content Include="Views\Shared\Prices.cshtml" />
+    <Content Include="Views\Services\Prices.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

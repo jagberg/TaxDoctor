@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TaxDoctor.Web.Controllers
 {
-    public class ContactController : Controller
+    public class ContactController : BaseController
     {
         ILogger logger = new Logger();
         
