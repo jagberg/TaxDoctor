@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TaxDoctor.Web.Controllers
 {
-    public class TrainingController : Controller
+    public class TrainingController : BaseController
     {
         public ActionResult Training()
         {

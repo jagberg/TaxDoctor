@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace TaxDoctor.Web.Controllers
 {
-    public class ServicesController : Controller
+    public class ServicesController : BaseController
     {
+        [MetaKeywords("accounting, accountant, financial statements")]
         public ActionResult Accounting()
         {
             return View();
@@ -25,12 +26,45 @@ namespace TaxDoctor.Web.Controllers
             return View();
         }
 
-        public ActionResult Bookkeeping() { return View(); }
-        public ActionResult FinancialStatements() { return View(); }
-        public ActionResult CompanyFormations() { return View(); }
-        public ActionResult BusinessPlans() { return View(); }
-        public ActionResult Payroll() { return View(); }
-        public ActionResult TaxServices() { return View(); }
-        public ActionResult BankLoanApplications() { return View(); }
+        public ActionResult Bookkeeping()
+        {
+            return View();
+        }
+
+        public ActionResult FinancialStatements()
+        {
+            return View();
+        }
+
+        public ActionResult CompanyFormations()
+        {
+            return View();
+        }
+
+        public ActionResult BusinessPlans()
+        {
+            return View();
+        }
+
+        public ActionResult Payroll()
+        {
+            return View();
+        }
+
+        public ActionResult TaxServices()
+        {
+            return View();
+        }
+
+        public ActionResult BankLoanApplications()
+        {
+            return View();
+        }
+
+        public ActionResult Prices()
+        {
+            return View();
+        }
+
     }
 }

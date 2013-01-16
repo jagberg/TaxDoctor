@@ -9,9 +9,9 @@
     <script src="@Url.Content("~/Scripts/jquery-1.5.1.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
 
-    <meta content="We offer an affordable service for all your tax concerns including accounting, bookkeeping, training and personal tax returns."
+    <meta content="@ViewBag.MetaDescription"
         name="description">
-    <meta content="tax, bookkeeping, bookkeeper, payroll, paye, irp5, irp6, it12, it14, emp201, emp501, vat201, cashflow, financial statements, company formations, annual returns, cipc, cipro, sars, sars easyfile, tax sumbission, workmans compensation, audits, quickbooks, pastel payroll, excel, sdl, uif, ck, tax clearance certificates, accounting officer"
+    <meta content="@ViewBag.MetaKeywords"
         name="keywords">
 </head>
 <body>
@@ -35,6 +35,8 @@
         </li>
         <li>
         <li>@Html.ActionLink("Training", "Training", "Training")
+        </li>
+        <li>@Html.ActionLink("Prices", "Prices", "Services")
         </li>
         <li>@Html.ActionLink("About Us", "About", "Home")
         </li>
@@ -77,7 +79,7 @@
         <div id="meta">
             © 2012 Tax Doctor
             <ul>
-                <li><a href="http://twitter.com/taxdoctorsa">
+                <li><a href="http://twitter.com/mytaxdoctor">
                     <img alt="Twitter" src="@Url.Content("~/Content/images/twitter.png")"></a>
                 </li>
             </ul>
