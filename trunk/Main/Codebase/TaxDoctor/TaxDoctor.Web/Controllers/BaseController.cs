@@ -14,6 +14,12 @@ namespace TaxDoctor.Web.Controllers
         /// <param name="filterContext"></param>
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
+            var pageTitle = filterContext.ActionDescriptor.GetCustomAttributes(typeof(PageTitleAttribute), false);
+            if (pageTitle.Length == 1)
+            {
+                ViewData["PageTitle"] = ((PageTitleAttribute)(pageTitle[0])).Parameter;
+            }
+
             var keywords = filterContext.ActionDescriptor.GetCustomAttributes(typeof(MetaKeywordsAttribute), false);
             if (keywords.Length == 1)
             {

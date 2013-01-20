@@ -2,17 +2,16 @@
 <html lang="en-GB">
 <head>
     <meta charset="utf-8">
-    <title>Tax Doctor - Affordable accounting, bookkeeping, payroll and tax returns</title>
+    @*<title>Tax Doctor - Affordable accounting, bookkeeping, payroll and tax returns</title>*@
+    <title>Tax Doctor - @ViewBag.PageTitle</title>
     <link href="@Url.Content("~/Content/NewLook.css")" rel="stylesheet" type="text/css" />
     <link href="/apps/intl/en/css/apps-button-hp.css" rel="stylesheet">
 
     <script src="@Url.Content("~/Scripts/jquery-1.5.1.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
 
-    <meta content="@ViewBag.MetaDescription"
-        name="description">
-    <meta content="@ViewBag.MetaKeywords"
-        name="keywords">
+    <meta name="description" content="@ViewBag.MetaDescription">
+    <meta name="keywords" content="@ViewBag.MetaKeywords">
 </head>
 <body>
     <div id="header">
@@ -57,13 +56,17 @@
     <div id="footer">
         <div>
             <dl>
-                <dt>Our Services </dt>
+                <dt>Our Services</dt>
                 <dd>@Html.ActionLink("Accounting", "Accounting", "Services")</dd>
                 <dd>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services")</dd>
                 <dd>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services")</dd>
                 <dd>@Html.ActionLink("Company Formations", "CompanyFormations", "Services")</dd>
                 <dd>@Html.ActionLink("Payroll", "Payroll", "Services")</dd>
                 <dd>@Html.ActionLink("Tax Services", "TaxServices", "Services")</dd>
+            </dl>
+            <dl>
+                <dt>Our Prices </dt>
+                <dd>@Html.ActionLink("Prices", "Prices", "Services")</dd>
             </dl>
             <dl>
                 <dt>Training</dt>
