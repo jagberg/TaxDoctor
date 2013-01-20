@@ -140,6 +140,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Domain\EmailProcessor.cs" />
+    <Compile Include="Helper\PageTitleAttribute.cs" />
     <Compile Include="Helper\MetaDescriptionAttribute.cs" />
     <Compile Include="Helper\Logger.cs" />
     <Compile Include="Helper\MetaKeywordsAttribute.cs" />
