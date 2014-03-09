@@ -279,6 +279,7 @@
     <None Include="Properties\PublishProfiles\mytaxdoctor.co.za - Web Deploy.pubxml" />
     <Content Include="Views\Shared\Prices.cshtml" />
     <Content Include="Views\Services\Prices.cshtml" />
+    <Content Include="TaxDoctor.Web.targets" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
