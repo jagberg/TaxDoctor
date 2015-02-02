@@ -1,0 +1,32 @@
+﻿@model TaxDoctor.Web.ContactModel
+@{
+    Layout = "";
+}
+<h2>Contact Us</h2>
+<div>
+    <ul>
+        <li>Tel: 011 787-7279</li>
+        <li>Cell: 073 874-6774</li>
+        <li><a href="mailto:taxdoctorsa@gmail.com">Email Us</a></li>
+    </ul>
+</div>
+<hr />
+
+@using (Ajax.BeginForm("ContactUs", "Contact", new AjaxOptions { UpdateTargetId = "ContactForm" }))
+{
+    <div>Name: @Html.ValidationMessageFor(x => x.Name) @Html.EditorFor(x => x.Name)</div>
+
+    <div>Phone Number: @Html.ValidationMessageFor(x => x.PhoneNumber) @Html.EditorFor(x => x.PhoneNumber)</div>
+
+    <div>Email Address: @Html.ValidationMessageFor(x => x.EmailAddress) @Html.EditorFor(x => x.EmailAddress, new { type = "email" })</div>
+    
+    <div>Comments: @Html.ValidationMessageFor(x => x.Comment) @Html.EditorFor(x => x.Comment)</div>
+
+    <p align="right">
+        <input class="actionButtons" type="submit" value="Send" />
+    </p>
+    
+    <div class="field-validation-error">@TempData["EmailException"]</div>
+    
+    <div>@TempData["ContactUsSuccessMessage"]</div>
+}

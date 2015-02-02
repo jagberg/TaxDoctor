@@ -1,0 +1,935 @@
+﻿@media screen,projection {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, #nav a {
+        color: #444444;
+    }
+
+    html {
+        background: #eee url(images/header.png) repeat-x;
+        font: 13px/20px arial,sans-serif;
+    }
+
+    h1, h2, h3, h4, p, blockquote, table, div {
+        min-width: 20%;
+    }
+
+    h1, h2, h3, th, td {
+        font-weight: bold;
+    }
+
+    h2, h3 {
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #222;
+        margin: 0 0 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 15px 0 10px;
+    }
+
+        h3 + h2, h4 + h2, h5 + h2, h6 + h2, p + h2, blockquote + h2, ul + h2, ol + h2, dl + h2 {
+            margin-top: 15px;
+        }
+
+    h4 {
+        font-size: 1em;
+        margin: 10px 0 -10px;
+    }
+
+    b {
+        color: #222;
+    }
+
+    p, blockquote, ul, ol, table, div {
+        margin: 10px 0;
+    }
+
+    pre, code {
+        color: #282;
+        font: 13px/20px courier,monospace;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        ul.alt, ol.alt {
+            margin: 0px 0 10px 20px;
+        }
+
+        ul.alt {
+            list-style-type: square;
+        }
+
+    ol.alt {
+        list-style-type: decimal;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        table + h2 {
+            margin-top: 20px;
+        }
+
+    tbody tr:hover * {
+        background: #eee;
+    }
+
+    tbody th {
+        text-align: left;
+    }
+
+    th, td {
+        border-bottom: 1px solid #ddd;
+        padding: 3px 10px 2px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    a, ins {
+        text-decoration: none;
+    }
+
+    a {
+        color: #06d;
+    }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        a:focus, a:active {
+            color: #c11;
+        }
+
+        a:focus, a:hover, a:active {
+            text-decoration: underline;
+        }
+
+        a img {
+            border: 0;
+        }
+
+    cite, sup {
+        color: #666;
+    }
+
+    cite {
+        font-style: normal;
+    }
+
+    sup {
+        font-size: 10px;
+        vertical-align: baseline;
+    }
+
+    ins {
+        color: #900;
+        font-weight: bold;
+    }
+
+    body.rtl blockquote {
+        background-position: top right;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+
+    body.rtl ul.alt, body.rtl ol.alt {
+        margin: 10px 20px 10px 0;
+    }
+
+    body.rtl tbody th {
+        text-align: right;
+    }
+
+    form ul label {
+        display: inline;
+        font-weight: normal;
+    }
+
+    form ul input, form div input, form .f-min {
+        width: 98%;
+    }
+
+    /*form input, form textarea {
+        width: 300px;
+    }*/
+
+    form strong, label, form .f-c1 li, form .f-c2 li, form .f-c3 li, form .f-c4 li {
+        display: block;
+    }
+
+    form strong, label {
+        color: #000;
+        margin: 10px 0 0;
+        font-weight: bold;
+    }
+
+    form input, textarea {
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    .actionButtons {
+        width: 120px;
+        height: 30px;
+    }
+
+    form textarea {
+        width: 98%;
+        height: 130px;
+    }
+
+    body #header, body #nav, body #stage, body #article, body #footer div, body.lock #header, body.lock #nav, body.lock #stage, body.lock #article, body.lock #footer div {
+        width: 850px;
+    }
+
+    body #stage, body.lock #stage {
+        width: 684px;
+    }
+
+    body #footer #meta, body.lock #footer #meta {
+        width: 650px;
+    }
+
+    * > body #header, * > body #nav, * > body #stage, * > body #article, * > body #footer div {
+        max-width: 950px;
+        width: auto;
+    }
+
+    * > body #stage {
+        max-width: 684px;
+        width: auto;
+    }
+
+    * > body #footer #meta {
+        max-width: 650px;
+        width: auto;
+    }
+
+    #header, #nav, #stage, #article, #footer div {
+        margin: auto;
+        width: 950px;
+    }
+
+    #stage, #article, #footer, #footer div {
+        clear: both;
+    }
+
+    #header, #header h1 {
+        position: relative;
+    }
+
+    #header {
+        height: 86px;
+        top: 0;
+    }
+
+        #header * {
+            color: #fff;
+        }
+
+        #header h1 {
+            font: 33px/50px 'droid sans',arial,sans-serif;
+            left: 20px;
+            letter-spacing: -1px;
+            text-shadow: 1px 1px 1px #0f4db8;
+            top: 20px;
+            width: 50%;
+        }
+
+            #header h1 a {
+                text-decoration: none;
+            }
+
+            #header h1 img {
+                float: left;
+                padding: 0 10px 0 0;
+            }
+
+        #header form {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+            #header form input, #header form select {
+                font: 13px/20px arial,sans-serif;
+            }
+
+                #header form select#f-lang {
+                    background: #007af5;
+                }
+
+            #header form span {
+                padding: 0 10px;
+            }
+
+                #header form span#survey {
+                    padding: 0;
+                }
+
+    body.rtl #header h1 {
+        left: auto;
+        right: 20px;
+    }
+
+        body.rtl #header h1 img {
+            float: right;
+            padding: 0 0 0 10px;
+        }
+
+    body.rtl #header form {
+        left: 20px;
+        right: auto;
+    }
+
+    #footer, .section {
+        background: #fff;
+        height: 1%;
+    }
+
+    .contactus {
+        background: inherit;
+        height: 1%;
+    }
+
+    #footer, #footer #meta {
+        border-top: 1px solid #ddd;
+        position: relative;
+        top: 10px;
+    }
+
+    #footer {
+        font-size: 11px;
+        line-height: 16px;
+        padding: 10px 20px;
+    }
+
+        #footer dl {
+            float: left;
+            margin-right: .66%;
+            width: 16%;
+        }
+
+        #footer dt, #footer dd {
+            padding: 0 0 3px;
+        }
+
+        #footer dt {
+            font-weight: bold;
+        }
+
+        #footer #meta {
+            margin-bottom: 10px;
+            max-width: 650px;
+            padding: 10px 300px 0 0;
+        }
+
+            #footer #meta ul, #footer #meta li {
+                display: inline;
+                margin: 0;
+            }
+
+            #footer #meta ul {
+                padding-left: 10px;
+            }
+
+            #footer #meta form {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+
+            #footer #meta input {
+                width: auto;
+            }
+
+                #footer #meta input[type='text'] {
+                    width: 200px;
+                }
+
+            #footer #meta a {
+                padding-right: 10px;
+            }
+
+            #footer #meta img {
+                position: relative;
+                top: 3px;
+            }
+
+    body.rtl #footer #meta {
+        padding: 10px 0 0 300px;
+    }
+
+        body.rtl #footer #meta ul {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+
+        body.rtl #footer #meta form {
+            left: 0;
+            right: auto;
+        }
+
+        body.rtl #footer #meta a {
+            padding-left: 10px;
+            padding-right: 0;
+        }
+
+    #nav {
+        border-left: 1px solid #bbb;
+        height: 32px;
+        line-height: 22px;
+    }
+
+        #nav ul {
+            display: none;
+            margin: 0;
+        }
+
+        #nav li {
+            float: left;
+            position: relative;
+            z-index: 2;
+        }
+
+            #nav li:hover ul {
+                border: 1px solid #ddd;
+                border-top: 0;
+                cursor: pointer;
+                display: block;
+                min-width: 200px;
+            }
+
+            #nav li:last-child {
+                border-right: 1px solid #fff;
+            }
+
+            #nav li ul {
+                background: #fff;
+                left: 0;
+                position: absolute;
+                top: 33px;
+            }
+
+            #nav li li {
+                display: inline;
+                float: none !important;
+                white-space: nowrap;
+            }
+
+    * > #nav li li {
+        display: block;
+    }
+
+    #nav li li a {
+        border: 0 !important;
+        min-width: 158px;
+    }
+
+    #nav li a, #nav li strong {
+        border-bottom: 1px solid #b2b2b2;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #ddd;
+        display: block;
+        padding: 6px 20px 4px;
+    }
+
+        #nav li a:focus, #nav li a:hover, #nav li a:active, #nav li strong:hover, #nav .path {
+            background: #bcd6f0;
+            text-decoration: none;
+        }
+
+    #nav li strong {
+        cursor: default;
+        font-weight: normal;
+    }
+
+    body.rtl #nav {
+        border-left: 0;
+        border-right: 1px solid #ddd;
+    }
+
+        body.rtl #nav li {
+            float: right;
+        }
+
+            body.rtl #nav li:last-child {
+                border-left: 1px solid #fff;
+                border-right: 0;
+            }
+
+            body.rtl #nav li ul {
+                left: auto;
+                right: 0;
+            }
+
+            body.rtl #nav li a, body.rtl #nav li strong {
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #fff;
+            }
+
+    #stage {
+        max-width: 684px;
+        min-height: 10px;
+        padding: 5px 244px 10px 20px;
+        position: relative;
+    }
+
+        #stage h2 {
+            font-size: 27px;
+            line-height: 30px;
+            margin: 0 0 5px;
+        }
+
+        #stage p {
+            margin: 0 0 10px;
+        }
+
+        #stage div {
+            bottom: 10px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 200px;
+        }
+
+    #header div {
+        bottom: 10px;
+        position: absolute;
+        right: 2px;
+        top: 20px;
+    }
+
+    * > #stage div {
+        top: auto;
+    }
+
+    #stage img {
+        float: left;
+        margin: -10px 30px 10px 0;
+    }
+
+    body.rtl #stage {
+        padding: 30px 20px 10px 244px;
+    }
+
+        body.rtl #stage div {
+            left: 20px;
+            right: auto;
+        }
+
+        body.rtl #stage img {
+            float: right;
+            margin: -10px 0 10px 30px;
+        }
+
+    #article.extra {
+        padding-right: 230px;
+        width: 720px;
+    }
+
+    * > #article.extra {
+        max-width: 720px;
+        width: auto;
+    }
+
+    body.rtl #article.extra {
+        padding-left: 230px;
+        padding-right: 0;
+    }
+
+    body.rtl #aside {
+        float: left;
+        left: auto;
+        right: 10px;
+        margin: 0 0 0 -230px;
+    }
+
+    * > body.rtl {
+        right: auto;
+    }
+
+    * + html body.rtl {
+        right: 10px;
+    }
+
+    .section {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 0 0 10px 0;
+        overflow: hidden;
+        padding: 20px 20px 9px;
+        max-width: 700px;
+    }
+
+    .contactus {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        /*border-color:none;*/ /*#006bd5;*/
+        margin: 0 0 10px 0;
+        overflow: hidden;
+        padding: 20px 8px 9px;
+    }
+
+        .contactus > h2 {
+            color: #fa9229;
+        }
+
+    .section > h2, .section ul {
+        clear: left;
+    }
+
+    body.rtl .section > h2, body.rtl .section ul {
+        clear: right;
+    }
+
+    body.rtl .section h3 {
+        clear: right;
+    }
+
+    .type-3 div {
+        float: left;
+        margin: 0 3% 0 0;
+    }
+
+    * > .type-3 div {
+        margin: 0 5% 0 0;
+    }
+
+    .type-3 div div {
+        float: none;
+        margin: 10px 0;
+    }
+
+    .type-3 div {
+        width: 28.3%;
+    }
+
+    body.rtl .type-3 div {
+        float: right;
+        margin: 0 0 0 3%;
+    }
+
+    * > body.rtl .type-3 div {
+        margin: 0 0 0 5%;
+    }
+
+    .content-section {
+        margin-bottom: 30px;
+    }
+
+    .txd-button-basic, .txd-button-basic div {
+        margin: 0;
+        position: static !important;
+    }
+
+    .txd-button-basic {
+        width: 200px !important;
+    }
+
+        .txd-button-basic div {
+            width: auto !important;
+        }
+
+        .txd-button-basic a {
+            font-weight: normal !important;
+        }
+
+    body.rtl .media, body.rtl .media div ul {
+        float: left;
+    }
+
+    body.rtl .media {
+        margin: 10px 20px 20px 0;
+    }
+
+        body.rtl .media div ul {
+            margin: 0 20px 0 0;
+        }
+
+        body.rtl .media div li {
+            margin-left: 0;
+            margin-right: 2px;
+        }
+
+    body.rtl .compact .nav li, body.rtl .compact .nav-feature li {
+        float: right;
+    }
+
+    body.rtl .compact .nav-feature li {
+        padding: 0 18px 0 0;
+    }
+
+        body.rtl .compact .nav-feature li a {
+            padding: 0 0 0 18px;
+        }
+
+    body.rtl .compact div {
+        clear: right;
+    }
+
+    .icon {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    .meta, .note, .media div p {
+        color: #666;
+    }
+
+    body.rtl .icon {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+
+    body.rtl .logos {
+        float: left;
+        margin: 0 5% 10px 0;
+    }
+
+    body.rtl .aux {
+        clear: right;
+    }
+
+    .contactus {
+        margin-left: 4px;
+        top: 0px;
+        width: 150px;
+        height: auto;
+        float: right;
+        position: relative;
+    }
+
+    .sections {
+        height: 620px;
+        overflow: hidden;
+        clear: left;
+        position: relative;
+    }
+
+        .sections .section {
+            margin: 0px;
+            top: 0px;
+            height: 315px;
+            float: left;
+            position: absolute;
+        }
+
+        .sections .pos-1 {
+            left: 0%;
+            width: 44% !important;
+        }
+
+        .sections .pos-2 {
+            left: 50.5%;
+            width: 44% !important;
+        }
+
+        .sections .pos-3 {
+            left: 0%;
+            top: 57%;
+            width: 98% !important;
+            height: auto;
+        }
+
+    body.rtl .sections .section {
+        float: right;
+    }
+
+    body.rtl .sections .pos-1 {
+        right: 75%;
+    }
+
+    body.rtl .sections .pos-2 {
+        right: 50%;
+    }
+
+    body.rtl .sections .pos-3 {
+        left: 25%;
+    }
+
+    body.rtl .sections .pos-4 {
+        left: 0px;
+    }
+
+    .type-4 img {
+        display: block;
+    }
+
+    .type-4 img {
+        margin: 0px auto 10px;
+    }
+
+    .type-4 div {
+        margin: 0px 3% 0px 0px;
+        float: left;
+    }
+
+    * > .type-4 div {
+        margin: 0px 5% 0px 0px;
+    }
+
+    .type-4 div div {
+        margin: 10px 0px;
+        float: none;
+    }
+
+    .type-4 div {
+        width: 20%;
+    }
+
+    .type-4 .txd-button-basic {
+        margin: 0px 0px 0px 20px;
+        float: right;
+    }
+
+        .type-4 .txd-button-basic div {
+            margin: 0px !important;
+            width: auto !important;
+            float: none;
+        }
+
+    body.rtl .type-4 div {
+        margin: 0px 0px 0px 3%;
+        float: left;
+    }
+
+    * > body.rtl .type-4 div {
+        margin: 0px 0px 0px 5%;
+    }
+
+    body.rtl .type-4 .txd-button-basic {
+        margin: 0px 20px 0px 0px;
+        float: left;
+    }
+
+    .image-package {
+        float: left;
+    }
+
+    .image-title {
+        float: right;
+    }
+
+    .image-section {
+        /*text-align: left;*/
+        float: right;
+        clear: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    /* Start: Styles for validation helpers
+-----------------------------------------------------------*/
+    .field-validation-error {
+        font-size: small;
+        color: red;
+    }
+
+    .field-validation-valid {
+        display: none;
+        clear: left;
+    }
+
+    .input-validation-error {
+        border: 1px solid red;
+        background-color: #ffeeee;
+    }
+
+    .validation-summary-errors {
+        font-weight: normal;
+        font-size: small;
+        color: red;
+    }
+
+    .validation-summary-valid {
+        display: none;
+    }
+    /* -----------------------------------------------------------
+        End: Styles for validation helpers*/
+
+    /* Start: Styles for table
+-----------------------------------------------------------*/
+    table {
+        margin: 10px 10px 10px 10px;
+        width: 90%;
+        border-top: 1px solid #e5eff8;
+        border-right: 1px solid #e5eff8;
+        border-left: 1px solid #e5eff8;
+        border-collapse: collapse;
+    }
+
+        table th {
+            text-align: left;
+        }
+
+        table thead th {
+            text-align: center;
+            font-size: large;
+            font: bold 1.2em/2em;
+            color: inherit;
+            height: 50px;
+            width: 33%;
+        }
+
+        table tbody td {
+            text-align: center;
+            font-weight: inherit;
+            /*color:#678197;*/
+            border-bottom: 1px solid #e5eff8;
+            border-left: 1px solid #e5eff8;
+            padding: .3em 1em;
+            /*text-align:center;*/
+        }
+
+        table tbody th {
+            font-weight: normal;
+        }
+
+    tbody tr.odd td {
+        background: green;
+    }
+
+    thead th.odd {
+        background: red;
+    }
+
+    /* End: Styles for validation helpers
+-----------------------------------------------------------*/
+}
+
+@media print {
+    html {
+        font-family: arial,sans-serif;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: normal;
+    }
+
+    #header form, #footer, #nav ul, #stage img {
+        display: none;
+    }
+}
