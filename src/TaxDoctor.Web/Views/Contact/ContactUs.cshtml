@@ -22,6 +22,8 @@
     
     <div>Comments: @Html.ValidationMessageFor(x => x.Comment) @Html.EditorFor(x => x.Comment)</div>
 
+    <div class="field-antispam">@Html.EditorFor(x => x.SpamText)</div>
+
     <p align="right">
         <input class="actionButtons" type="submit" value="Send" />
     </p>
