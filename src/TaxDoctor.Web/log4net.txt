@@ -1,0 +1,216 @@
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
+log4net: log4net assembly [log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a]. Loaded from [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\8aada272\1974cc32_d23ed001\log4net.dll]. (.NET Runtime [4.0.30319.34011] on Microsoft Windows NT 6.2.9200.0)
+log4net: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository for assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\5d952ada\f31bf091\assembly\dl3\0fc90f1a\70460ef5_d33ed001\TaxDoctor.Web.dll]
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: Assembly [TaxDoctor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: configuring repository [log4net-default-repository] using .config file section
+log4net: Application config file is [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\web.config]
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [INFO].
+log4net: Logger [root] level set to [name="INFO",value=40000].
+log4net: Loading Appender [RollingFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [taxdoctorlog.txt]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date %level - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Searched for existing files in [C:\Code\TaxDoctor-git\src\TaxDoctor.Web]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Code\TaxDoctor-git\src\TaxDoctor.Web\taxdoctorlog.txt] append [True]
+log4net: reated Appender [RollingFileAppender]
+log4net: Adding appender named [RollingFileAppender] to logger [root].
+log4net: Hierarchy Threshold []
