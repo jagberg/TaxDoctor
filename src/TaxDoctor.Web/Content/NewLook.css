@@ -866,6 +866,10 @@
     .validation-summary-valid {
         display: none;
     }
+
+    .field-antispam {
+        display: none;
+    }
     /* -----------------------------------------------------------
         End: Styles for validation helpers*/
 

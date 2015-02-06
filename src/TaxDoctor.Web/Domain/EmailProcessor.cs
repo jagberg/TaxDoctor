@@ -34,6 +34,10 @@ namespace TaxDoctor.Web
         {
             StringBuilder body = new StringBuilder();
 
+            if (contact.IsSpam)
+            {
+                body.AppendLine(string.Format("Damn spam: {0}", contact.SpamText));
+            }
             body.AppendLine(string.Format("Name: {0}", contact.Name));
             body.AppendLine(string.Format("Email: {0}", contact.EmailAddress));
             body.AppendLine(string.Format("Phone Number: {0}", contact.PhoneNumber));
