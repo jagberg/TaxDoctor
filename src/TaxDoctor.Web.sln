@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxDoctor.Web", "TaxDoctor.Web\TaxDoctor.Web.csproj", "{6D79F72E-04EC-453C-8787-61828C70F95B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metrics", "Metrics", "{28EF8D8A-E614-45AA-9DB9-50C8557EBB2E}"
+	ProjectSection(SolutionItems) = preProject
+		..\BingSiteAuth.xml = ..\BingSiteAuth.xml
+		..\googleb952dd2bdfaa9bb6.html = ..\googleb952dd2bdfaa9bb6.html
+		..\sitemapspal.xml = ..\sitemapspal.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70B616EE-385D-48FD-AF11-B369FE787CF7}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
