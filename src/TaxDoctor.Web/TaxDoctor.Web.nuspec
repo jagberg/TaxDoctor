@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TaxDoctor.Web</id>
+    <title>Tax Doctor</title>
+    <version>1.0.0</version>
+    <authors>Justin Goldberg</authors>
+    <description>Tax Doctor</description>
+  </metadata>
+  
+  <files>
+    <file src="bin\*.dll" target="bin" />
+    <file src="Content\" target="Content" />
+    <file src="Scripts\" target="Scripts" />
+    <file src="Views\" target="Views" />
+    <file src="..\..\BingSiteAuth.xml" target="" />
+    <file src="..\..\googleb952dd2bdfaa9bb6.html" target="" />
+    <file src="..\..\sitemapspal.xml" target="" />
+    <file src="web.config" target="" />
+  </files>
+</package>

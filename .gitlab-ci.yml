@@ -19,7 +19,7 @@
 
 # place project specific paths in variables to make the rest of the script more generic
 variables:
-  DEPLOY_FOLDER: '.\deploy'
+  DEPLOY_FOLDER: '..\..\deploy'
   NUGET_PATH: 'C:\Programs\Nuget\nuget.exe'
   MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe'
 
@@ -34,15 +34,11 @@ build_job:
     - pushes
   script:
     - '& "$env:NUGET_PATH" restore src\TaxDoctor.Web.sln' # restore Nuget dependencies
-    - '& "$env:MSBUILD_PATH" src\TaxDoctor.Web\TaxDoctor.Web.csproj /p:Configuration=Release' # build the project
+    - '& "$env:MSBUILD_PATH" src\TaxDoctor.Web\TaxDoctor.Web.csproj /p:Configuration=Release /p:RunOctoPack=true /p:OctoPackPublishPackageToFileShare=$($env:DEPLOY_FOLDER)' # build the project
   artifacts:
     expire_in: 1 week # save gitlab server space, we copy the files we need to deploy folder later on
     paths:
-      - '.\src\TaxDoctor.Web\bin\Release\'
-      - '.\src\TaxDoctor.Web\web.config'
-      - '.\BingSiteAuth.xml'
-      - '.\googleb952dd2bdfaa9bb6.html'
-      - '.\sitemapspal.xml'
+      - '.\deploy\*.nupkg'
 
 # deploy_job:
 #   stage: deploy
