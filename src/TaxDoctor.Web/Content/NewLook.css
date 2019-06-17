@@ -1,4 +1,4 @@
-﻿@media screen,projection {
+@media screen,projection {
     * {
         margin: 0;
         padding: 0;
@@ -370,6 +370,7 @@
             #footer #meta img {
                 position: relative;
                 top: 3px;
+                height: 24px;
             }
 
     body.rtl #footer #meta {
