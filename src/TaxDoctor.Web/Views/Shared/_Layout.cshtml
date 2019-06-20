@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="utf-8">
@@ -7,10 +7,10 @@
     <link href="@Url.Content("~/Content/NewLook.css")" rel="stylesheet" type="text/css" />
 
     @* Favicons *@
-    <link rel="apple-touch-icon" sizes="180x180" href="Content/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Content/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Content/favicons/favicon-16x16.png">
-    <link rel="manifest" href="Content/favicons/site.webmanifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="@Url.Content("~/Content/favicons/apple-touch-icon.png")">
+    <link rel="icon" type="image/png" sizes="32x32" href="@Url.Content("~/Content/favicons/favicon-32x32.png")">
+    <link rel="icon" type="image/png" sizes="16x16" href="@Url.Content("~/Content/favicons/favicon-16x16.png")">
+    <link rel="manifest" href="@Url.Content("~/Content/favicons/site.webmanifest.json")">
 
     <meta name="description" content="@ViewBag.MetaDescription">
     <meta name="keywords" content="@ViewBag.MetaKeywords">
@@ -47,23 +47,23 @@
         <li>
             <strong>Our Services</strong>
             <ul>
-                <li>@Html.ActionLink("Accounting", "Accounting", "Services")</li>
-                <li>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services")</li>
-                <li>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services")</li>
-                <li>@Html.ActionLink("Company Formations", "CompanyFormations", "Services")</li>
-                <li>@Html.ActionLink("Payroll", "Payroll", "Services")</li>
-                <li>@Html.ActionLink("Tax Services", "TaxServices", "Services")</li>
+                <li>@Html.ActionLink("Accounting", "Accounting", "Services", null, new { title = "Accounting Services"})</li>
+                <li>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", null, new { title = "Bank Loan Applications" })</li>
+                <li>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services", null, new { title = "Bookkeeping Services" })</li>
+                <li>@Html.ActionLink("Company Formations", "CompanyFormations", "Services", null, new { title = "Company Formation Services" })</li>
+                <li>@Html.ActionLink("Payroll", "Payroll", "Services", null, new { title = "Payroll Services" })</li>
+                <li>@Html.ActionLink("Tax Services", "TaxServices", "Services", null, new { title = "Tax Services"})</li>
             </ul>
         </li>
         <li>
         <li>
-            @Html.ActionLink("Training", "Training", "Training")
+            @Html.ActionLink("Training", "Training", "Training", null, new { title = "Training" })
         </li>
         <li>
-            @Html.ActionLink("Prices", "Prices", "Services")
+            @Html.ActionLink("Prices", "Prices", "Services", null, new { title = "Prices" })
         </li>
         <li>
-            @Html.ActionLink("About Us", "About", "Home")
+            @Html.ActionLink("About Us", "About", "Home", null, new { title = "About Us" })
         </li>
     </ul>
     <div id="stage">
@@ -84,21 +84,21 @@
         <div>
             <dl>
                 <dt>Our Services</dt>
-                <dd>@Html.ActionLink("Accounting", "Accounting", "Services")</dd>
-                <dd>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services")</dd>
-                <dd>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services")</dd>
-                <dd>@Html.ActionLink("Company Formations", "CompanyFormations", "Services")</dd>
-                <dd>@Html.ActionLink("Payroll", "Payroll", "Services")</dd>
-                <dd>@Html.ActionLink("Tax Services", "TaxServices", "Services")</dd>
+                <dd>@Html.ActionLink("Accounting", "Accounting", "Services", null, new { title = "Accounting Services" })</dd>
+                <dd>@Html.ActionLink("Bank Loan Applications", "BankLoanApplications", "Services", null, new { title = "Bank Loan Applications" })</dd>
+                <dd>@Html.ActionLink("Bookkeeping", "Bookkeeping", "Services", null, new { title = "Bookkeeping Services" })</dd>
+                <dd>@Html.ActionLink("Company Formations", "CompanyFormations", "Services", null, new { title = "Company Formations" })</dd>
+                <dd>@Html.ActionLink("Payroll", "Payroll", "Services", null, new { title = "Payroll Services" })</dd>
+                <dd>@Html.ActionLink("Tax Services", "TaxServices", "Services", null, new { title = "Tax Services" })</dd>
             </dl>
             <dl>
                 <dt>Our Prices </dt>
-                <dd>@Html.ActionLink("Prices", "Prices", "Services")</dd>
+                <dd>@Html.ActionLink("Prices", "Prices", "Services", null, new { title = "Prices" })</dd>
             </dl>
             <dl>
                 <dt>Training</dt>
                 <dd>
-                    @Html.ActionLink("Training", "Training", "Training")
+                    @Html.ActionLink("Training", "Training", "Training", null, new { title = "Training" })
                 </dd>
             </dl>
             Address:
