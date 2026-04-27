@@ -1,0 +1,15 @@
+# Agent OS Standards Index
+
+astro:
+  components:
+    description: Astro component conventions, naming, and existing component inventory
+  pages:
+    description: URL structure, trailing slashes, SEO meta, image paths
+
+cloudflare:
+  deployment:
+    description: Cloudflare Pages build settings, env vars, branches, and static-only output rules
+
+css:
+  conventions:
+    description: CSS layout IDs, class names, colour palette, and responsive breakpoint

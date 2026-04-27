@@ -1,0 +1,111 @@
+---
+import Nav from '../components/Nav.astro';
+import ContactSidebar from '../components/ContactSidebar.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title,
+  description = 'Tax Doctor offers affordable accounting, bookkeeping, payroll and tax return services in Johannesburg.',
+  keywords = 'tax, bookkeeping, payroll, accounting, tax returns, SARS, Johannesburg',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tax Doctor - {title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest.json" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s) as HTMLScriptElement,
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode!.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-M682998');
+    </script>
+  </head>
+  <body>
+    <!-- GTM noscript -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M682998"
+        height="0" width="0" style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+
+    <div id="header">
+      <div id="header-inner">
+        <a href="/" class="logo-link">
+          <img class="logo-img" src="/images/TaxDoctorLogo.png" alt="Tax Doctor" />
+          <h1>Tax Doctor</h1>
+        </a>
+      </div>
+    </div>
+
+    <Nav />
+
+    <div id="article">
+      <div id="contact-sidebar">
+        <ContactSidebar />
+      </div>
+      <main id="main-content">
+        <slot />
+      </main>
+    </div>
+
+    <div id="footer">
+      <div id="footer-inner">
+        <dl>
+          <dt>Our Services</dt>
+          <dd><a href="/services/accounting/">Accounting</a></dd>
+          <dd><a href="/services/bank-loan-applications/">Bank Loan Applications</a></dd>
+          <dd><a href="/services/bookkeeping/">Bookkeeping</a></dd>
+          <dd><a href="/services/company-formations/">Company Formations</a></dd>
+          <dd><a href="/services/payroll/">Payroll</a></dd>
+          <dd><a href="/services/tax-services/">Tax Services</a></dd>
+        </dl>
+        <dl>
+          <dt>Our Prices</dt>
+          <dd><a href="/services/prices/">Prices</a></dd>
+        </dl>
+        <dl>
+          <dt>Training</dt>
+          <dd><a href="/training/">Training</a></dd>
+        </dl>
+        <address>
+          73 Mackay Avenue, Blairgowrie, Randburg, 2194
+        </address>
+      </div>
+      <div id="footer-meta">
+        &copy; {new Date().getFullYear()} Tax Doctor
+        <a href="http://facebook.com/taxdoctorsa" title="Facebook">
+          <img src="/images/f_logo_RGB-Blue_58.png" alt="Facebook" />
+        </a>
+        <a href="http://twitter.com/mytaxdoctor" title="Twitter">
+          <img src="/images/Twitter_Social_Icon_Circle_Color.svg" alt="Twitter" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

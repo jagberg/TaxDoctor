@@ -1,0 +1,12 @@
+name = "taxdoctor-site"
+compatibility_date = "2026-04-26"
+
+[assets]
+directory = "dist"
+
+[env.preview]
+name = "taxdoctor-site-preview"
+compatibility_date = "2026-04-26"
+
+[env.preview.assets]
+directory = "dist"

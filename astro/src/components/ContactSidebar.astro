@@ -1,0 +1,125 @@
+---
+// Contact sidebar — uses Web3Forms for email delivery (free, static-safe)
+// Set PUBLIC_WEB3FORMS_KEY in your .env file (see .env.example)
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '';
+const missingKey = !accessKey;
+---
+
+<div class="contactus">
+  <h2>Contact Us</h2>
+  <ul>
+    <li>Tel: <a href="tel:0117877279">011 787-7279</a></li>
+    <li>Cell: <a href="tel:0738746774">073 874-6774</a></li>
+    <li><a href="mailto:taxdoctorsa@gmail.com">Email Us</a></li>
+  </ul>
+  <hr />
+
+  <form id="contact-form" novalidate>
+    <input type="hidden" name="access_key" value={accessKey} />
+    <input type="hidden" name="subject" value="Tax Doctor Website Enquiry" />
+    <input type="hidden" name="from_name" value="Tax Doctor Website" />
+    <!-- Honeypot — if filled, it's spam -->
+    <div class="field-antispam">
+      <input type="text" name="botcheck" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <label for="cf-name">Name *</label>
+    <input type="text" id="cf-name" name="name" required autocomplete="name" />
+    <span class="field-error" id="err-name"></span>
+
+    <label for="cf-phone">Phone Number</label>
+    <input type="tel" id="cf-phone" name="phone" autocomplete="tel" />
+
+    <label for="cf-email">Email Address</label>
+    <input type="email" id="cf-email" name="email" autocomplete="email" />
+    <span class="field-error" id="err-contact"></span>
+
+    <label for="cf-comment">Comments *</label>
+    <textarea id="cf-comment" name="message" required></textarea>
+    <span class="field-error" id="err-message"></span>
+
+    <button type="submit" disabled={missingKey}>Send</button>
+
+    {missingKey && (
+      <p class="contact-error" style="font-size:11px;margin-top:6px">
+        ⚠ Add PUBLIC_WEB3FORMS_KEY to astro/.env to enable the form.
+      </p>
+    )}
+
+    <p id="cf-success" class="contact-success" style="display:none">
+      Thanks! We will be in touch soon.
+    </p>
+    <p id="cf-error" class="contact-error" style="display:none">
+      Sorry, we couldn't send your message. Please call or email us directly.
+    </p>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Clear previous errors
+      ['err-name', 'err-contact', 'err-message'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = '';
+      });
+      const successEl = document.getElementById('cf-success');
+      const errorEl   = document.getElementById('cf-error');
+      if (successEl) successEl.style.display = 'none';
+      if (errorEl)   errorEl.style.display   = 'none';
+
+      const data = new FormData(form);
+      const name    = (data.get('name') as string ?? '').trim();
+      const phone   = (data.get('phone') as string ?? '').trim();
+      const email   = (data.get('email') as string ?? '').trim();
+      const message = (data.get('message') as string ?? '').trim();
+
+      let valid = true;
+
+      if (!name) {
+        const el = document.getElementById('err-name');
+        if (el) el.textContent = '* Please enter your name';
+        valid = false;
+      }
+      if (!phone && !email) {
+        const el = document.getElementById('err-contact');
+        if (el) el.textContent = '* Please enter a phone number or email address';
+        valid = false;
+      }
+      if (!message) {
+        const el = document.getElementById('err-message');
+        if (el) el.textContent = '* Please enter a message';
+        valid = false;
+      }
+      if (!valid) return;
+
+      const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data,
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          form.reset();
+          if (successEl) successEl.style.display = 'block';
+        } else {
+          if (errorEl) errorEl.style.display = 'block';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send';
+        }
+      } catch {
+        if (errorEl) errorEl.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send';
+      }
+    });
+  }
+</script>

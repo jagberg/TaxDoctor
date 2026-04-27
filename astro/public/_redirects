@@ -1,0 +1,21 @@
+# Old ASP.NET MVC routes → new Astro URLs (301 permanent redirects)
+/Services/Accounting            /services/accounting/           301
+/Services/BankLoanApplications  /services/bank-loan-applications/ 301
+/Services/Bookkeeping           /services/bookkeeping/          301
+/Services/BusinessPlans         /services/business-plans/       301
+/Services/CashFlow              /services/cash-flow/            301
+/Services/CompanyFormations     /services/company-formations/   301
+/Services/FinancialStatements   /services/financial-statements/ 301
+/Services/OurServices           /services/                      301
+/Services/Payroll               /services/payroll/              301
+/Services/PayrollPAYE           /services/payroll-paye/         301
+/Services/Prices                /services/prices/               301
+/Services/TaxServices           /services/tax-services/         301
+/Training/Training              /training/                      301
+/Training/Accounting            /training/accounting/           301
+/Training/Excel                 /training/excel/                301
+/Training/Packages              /training/packages/             301
+/Training/Pastel                /training/pastel/               301
+/Training/QuickBooks            /training/quickbooks/           301
+/Home/About                     /about/                         301
+/Home/Index                     /                               301

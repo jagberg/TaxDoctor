@@ -1,0 +1,52 @@
+---
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string) {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<div id="nav">
+  <div id="nav-inner">
+    <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="top-nav" role="list">
+      <li class={currentPath === '/' ? 'active' : ''}>
+        <a href="/">Home</a>
+      </li>
+      <li class={isActive('/services') ? 'active' : ''}>
+        <button class="nav-trigger" aria-haspopup="true">Our Services ▾</button>
+        <ul class="dropdown" role="list">
+          <li><a href="/services/accounting/">Accounting</a></li>
+          <li><a href="/services/bank-loan-applications/">Bank Loan Applications</a></li>
+          <li><a href="/services/bookkeeping/">Bookkeeping</a></li>
+          <li><a href="/services/company-formations/">Company Formations</a></li>
+          <li><a href="/services/payroll/">Payroll</a></li>
+          <li><a href="/services/tax-services/">Tax Services</a></li>
+        </ul>
+      </li>
+      <li class={isActive('/training') ? 'active' : ''}>
+        <a href="/training/">Training</a>
+      </li>
+      <li class={isActive('/services/prices') ? 'active' : ''}>
+        <a href="/services/prices/">Prices</a>
+      </li>
+      <li class={isActive('/about') ? 'active' : ''}>
+        <a href="/about/">About Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('nav-toggle') as HTMLButtonElement | null;
+  const topNav = document.querySelector('#nav ul.top-nav') as HTMLElement | null;
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = topNav?.classList.contains('open');
+    topNav?.classList.toggle('open', !isOpen);
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>
