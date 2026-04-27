@@ -9,9 +9,10 @@ Contact: Tel 011 787-7279 · Cell 073 874-6774 · taxdoctorsa@gmail.com
 ## Migration in progress
 Converting from **ASP.NET MVC 3 (C#)** → **Astro 6, fully static, Cloudflare Pages**.
 
-- Legacy MVC source: `src/TaxDoctor.Web/`
-- New Astro site: `astro/` subfolder, on branch `astro-preview`
-- Deployment target: Cloudflare Pages (free tier, Johannesburg PoP for SA latency)
+- Legacy MVC source: `src/TaxDoctor.Web/` (no longer used)
+- New Astro site: `astro/` subfolder, on master branch
+- Deployment: Cloudflare Pages (live at taxdoctor.pages.dev, DNS pending)
+- Status: Deployed to Pages, awaiting DNS nameserver change at registeredomain.co.za
 
 ## Astro project (`astro/`)
 
@@ -72,16 +73,17 @@ npm run dev               # → http://localhost:4321
 #    - Env var: PUBLIC_WEB3FORMS_KEY=your_key
 ```
 
+## DNS & Domain Setup
+- **Domain registrar:** registerdomain.co.za
+- **Hosting:** Cloudflare Pages (taxdoctor.pages.dev preview, mytaxdoctor.co.za live)
+- **DNS nameservers:** Update at registerdomain.co.za to Cloudflare's nameservers when adding custom domain to Pages
+- **Email:** MX records (m07.internetmailserver.net) stay on current provider, kept after nameserver change
+- **Old hosting:** WinHost (cancel hosting, keep domain at registeredomain.co.za)
+
 ## Git
-- Main branch: `master` (legacy MVC site, currently live)
-- Preview branch: `astro-preview` (Astro site — not yet committed due to git lock)
-- To commit: close VS Code / GitHub Desktop to free git lock, then:
-  ```bash
-  git checkout astro-preview
-  git add astro/ CLAUDE.md astro-migration-plan.md
-  git commit -m "Add Astro static site (Cloudflare Pages)"
-  git push -u origin astro-preview
-  ```
+- Main branch: `master` (Astro site + CI/CD, deployed to Cloudflare Pages)
+- GitHub: jagberg/TaxDoctor (migrated from GitLab)
+- CI/CD: Native Cloudflare Pages GitHub integration (auto-deploy on push to master)
 
 ## Reference project
 `C:\Code\Bilder\bilder-site` — another Astro 6 + Cloudflare site (more complex:
